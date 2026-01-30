@@ -603,3 +603,140 @@
 2026-01-30 18:18:31,188 - src.model_trainer - INFO - Initialized Random Forest model
 2026-01-30 18:18:31,188 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
 2026-01-30 18:18:31,208 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:22:03,319 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 18:22:03,320 - src.model_trainer - INFO - Training xgboost model on 341176 samples
+2026-01-30 18:22:05,497 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:22:05,554 - src.model_trainer - INFO - Training accuracy: 1.0000
+2026-01-30 18:22:05,554 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:22:10,168 - src.model_trainer - INFO - CV Accuracy: 1.0000 (+/- 0.0000)
+2026-01-30 18:22:10,239 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/xgboost_creditcard_model.joblib
+2026-01-30 18:22:10,241 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 18:22:15,723 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 18:22:15,723 - src.model_trainer - INFO - Training xgboost model on 341176 samples
+2026-01-30 18:22:16,743 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:22:16,811 - src.model_trainer - INFO - Training accuracy: 1.0000
+2026-01-30 18:22:16,812 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:22:21,326 - src.model_trainer - INFO - CV Accuracy: 1.0000 (+/- 0.0000)
+2026-01-30 18:22:21,395 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/xgboost_creditcard_model.joblib
+2026-01-30 18:22:21,397 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 18:25:08,751 - src.model_trainer - INFO - Initialized Logistic Regression model
+2026-01-30 18:25:08,752 - src.model_trainer - INFO - Training logistic_regression model on 164352 samples
+2026-01-30 18:25:09,880 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:09,900 - src.model_trainer - INFO - Training accuracy: 0.8484
+2026-01-30 18:25:09,901 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:11,177 - src.model_trainer - INFO - CV Accuracy: 0.8484 (+/- 0.0013)
+2026-01-30 18:25:11,178 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:25:11,178 - src.model_trainer - INFO - Training random_forest model on 164352 samples
+2026-01-30 18:25:13,042 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:13,154 - src.model_trainer - INFO - Training accuracy: 0.8832
+2026-01-30 18:25:13,154 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:21,663 - src.model_trainer - INFO - CV Accuracy: 0.8811 (+/- 0.0173)
+2026-01-30 18:25:21,664 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 18:25:21,664 - src.model_trainer - INFO - Training xgboost model on 164352 samples
+2026-01-30 18:25:22,031 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:22,084 - src.model_trainer - INFO - Training accuracy: 0.9520
+2026-01-30 18:25:22,085 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:25,858 - src.model_trainer - INFO - CV Accuracy: 0.9541 (+/- 0.0538)
+2026-01-30 18:25:39,986 - src.model_trainer - INFO - Initialized Logistic Regression model
+2026-01-30 18:25:39,987 - src.model_trainer - INFO - Training logistic_regression model on 164352 samples
+2026-01-30 18:25:40,343 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:40,359 - src.model_trainer - INFO - Training accuracy: 0.8484
+2026-01-30 18:25:40,361 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:40,942 - src.model_trainer - INFO - CV Accuracy: 0.8484 (+/- 0.0013)
+2026-01-30 18:25:40,942 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:25:40,943 - src.model_trainer - INFO - Training random_forest model on 164352 samples
+2026-01-30 18:25:42,848 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:42,947 - src.model_trainer - INFO - Training accuracy: 0.8832
+2026-01-30 18:25:42,947 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:50,684 - src.model_trainer - INFO - CV Accuracy: 0.8811 (+/- 0.0173)
+2026-01-30 18:25:50,685 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 18:25:50,685 - src.model_trainer - INFO - Training xgboost model on 164352 samples
+2026-01-30 18:25:51,009 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:25:51,047 - src.model_trainer - INFO - Training accuracy: 0.9520
+2026-01-30 18:25:51,048 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:25:52,324 - src.model_trainer - INFO - CV Accuracy: 0.9541 (+/- 0.0538)
+2026-01-30 18:26:43,720 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/ecommerce_random_forest_model.joblib
+2026-01-30 18:26:43,755 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 18:35:39,065 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:35:39,068 - src.model_trainer - INFO - Training random_forest model on 164352 samples
+2026-01-30 18:35:40,773 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:35:40,860 - src.model_trainer - INFO - Training accuracy: 0.8832
+2026-01-30 18:35:40,860 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:35:48,163 - src.model_trainer - INFO - CV Accuracy: 0.8811 (+/- 0.0173)
+2026-01-30 18:35:48,343 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:35:48,388 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 18:36:01,053 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 18:36:01,053 - src.model_trainer - INFO - Training xgboost model on 164352 samples
+2026-01-30 18:36:02,744 - src.model_trainer - INFO - Model training complete
+2026-01-30 18:36:02,792 - src.model_trainer - INFO - Training accuracy: 0.9520
+2026-01-30 18:36:02,792 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 18:36:04,604 - src.model_trainer - INFO - CV Accuracy: 0.9541 (+/- 0.0538)
+2026-01-30 18:36:04,690 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/xgboost_fraud_model.joblib
+2026-01-30 18:36:04,692 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 18:36:12,518 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:36:12,518 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:36:12,538 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:36:27,906 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:36:27,906 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:36:27,925 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:37:05,565 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:37:05,565 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:37:05,583 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:37:12,579 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:37:12,579 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:37:12,597 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:37:22,018 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:37:22,019 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:37:22,036 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:06,389 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:06,391 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:06,425 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:06,738 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:06,739 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:06,757 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:16,838 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:16,838 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:16,854 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:22,256 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:22,256 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:22,273 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:32,622 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:32,622 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:32,640 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:41,261 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:41,261 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:41,279 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:47,540 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:47,540 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:47,557 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:39:53,946 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:39:53,947 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:39:53,964 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 18:40:07,729 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 18:40:07,729 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 18:40:07,746 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 22:11:41,789 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 22:11:41,790 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 22:11:41,815 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 22:12:01,404 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 22:12:01,405 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 22:12:01,434 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 22:12:07,032 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 22:12:07,032 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 22:12:07,064 - src.model_trainer - INFO - Model loaded successfully: random_forest
+2026-01-30 22:12:12,658 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-30 22:12:12,658 - src.model_trainer - INFO - Training random_forest model on 164352 samples
+2026-01-30 22:12:14,787 - src.model_trainer - INFO - Model training complete
+2026-01-30 22:12:14,946 - src.model_trainer - INFO - Training accuracy: 0.8832
+2026-01-30 22:12:14,946 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 22:12:25,028 - src.model_trainer - INFO - CV Accuracy: 0.8811 (+/- 0.0173)
+2026-01-30 22:12:25,216 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 22:12:25,295 - src.model_trainer - INFO - Model saved successfully
+2026-01-30 22:12:53,148 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-30 22:12:53,148 - src.model_trainer - INFO - Training xgboost model on 164352 samples
+2026-01-30 22:12:53,655 - src.model_trainer - INFO - Model training complete
+2026-01-30 22:12:53,737 - src.model_trainer - INFO - Training accuracy: 0.9520
+2026-01-30 22:12:53,738 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-30 22:12:57,011 - src.model_trainer - INFO - CV Accuracy: 0.9541 (+/- 0.0538)
+2026-01-30 22:12:57,196 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/xgboost_fraud_model.joblib
+2026-01-30 22:12:57,199 - src.model_trainer - INFO - Model saved successfully

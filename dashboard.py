@@ -161,11 +161,65 @@ def get_available_models(ds_name: str) -> list:
 
 @st.cache_data
 def load_data(dataset_type):
-    """Load fraud data"""
+    """Load fraud data with IP-to-country mapping (matching notebook pipeline)"""
     loader = DataLoader()
     try:
         if dataset_type == "Fraud E-commerce":
+            # Load fraud data
             df = loader.load_fraud_data()
+            
+            # Load IP to Country mapping
+            ip_country = loader.load_ip_to_country()
+            
+            if not ip_country.empty:
+                # IP addresses in Fraud_Data.csv are ALREADY INTEGERS stored as floats
+                # Just convert to int64 directly (no need to parse dot-notation)
+                df['ip_as_int'] = df['ip_address'].fillna(0).astype('int64')
+                
+                # Ensure ip_country bounds are int64 for compatible merge
+                ip_country['lower_bound_ip_address'] = ip_country['lower_bound_ip_address'].astype('int64')
+                ip_country['upper_bound_ip_address'] = ip_country['upper_bound_ip_address'].astype('int64')
+                
+                # Sort both dataframes for merge_asof
+                df_sorted = df.sort_values('ip_as_int')
+                ip_country_sorted = ip_country.sort_values('lower_bound_ip_address')
+                
+                # Use merge_asof for range-based lookup
+                df_merged = pd.merge_asof(
+                    df_sorted,
+                    ip_country_sorted[['lower_bound_ip_address', 'upper_bound_ip_address', 'country']],
+                    left_on='ip_as_int',
+                    right_on='lower_bound_ip_address',
+                    direction='backward'
+                )
+                
+                # Filter out invalid matches (IP must be <= upper_bound)
+                df_merged['ip_country'] = df_merged.apply(
+                    lambda row: row['country'] if pd.notna(row['upper_bound_ip_address']) and row['ip_as_int'] <= row['upper_bound_ip_address'] else None,
+                    axis=1
+                )
+                
+                # Drop temporary columns and restore original order
+                df = df_merged.drop(
+                    columns=['lower_bound_ip_address', 'upper_bound_ip_address', 'country']
+                ).sort_index()
+                
+                # Calculate fraud rate by country and create is_high_risk_country feature
+                country_fraud_stats = df[df['ip_country'].notna()].groupby('ip_country').agg(
+                    total_transactions=('class', 'count'),
+                    fraud_count=('class', 'sum')
+                ).reset_index()
+                country_fraud_stats['fraud_rate'] = country_fraud_stats['fraud_count'] / country_fraud_stats['total_transactions']
+                
+                # Define high-risk countries as those with fraud rate > 20%
+                HIGH_RISK_THRESHOLD = 0.20
+                high_risk_countries = set(country_fraud_stats[country_fraud_stats['fraud_rate'] > HIGH_RISK_THRESHOLD]['ip_country'].tolist())
+                
+                # Create the is_high_risk_country feature
+                df['is_high_risk_country'] = df['ip_country'].apply(
+                    lambda x: 1 if x in high_risk_countries else 0
+                )
+            
             return df, 'fraud'
         else:
             df = loader.load_creditcard_data()
@@ -177,6 +231,42 @@ def load_data(dataset_type):
 def get_class_distribution(df, target_col):
     """Get class distribution"""
     return df[target_col].value_counts().sort_index()
+
+def process_single_transaction_for_prediction(sample_row, df, ds_name):
+    """
+    Process a single transaction through the full pipeline (matching notebook).
+    
+    Args:
+        sample_row: DataFrame with single transaction
+        df: Full dataset for reference
+        ds_name: Dataset name ('fraud' or 'creditcard')
+    
+    Returns:
+        Processed features ready for model prediction
+    """
+    if ds_name == 'fraud':
+        # Apply feature engineering (matching notebook)
+        engineer = FraudDataFeatureEngineer()
+        sample_engineered = engineer.engineer_features(sample_row.copy(), fit=False)
+        
+        # Drop columns exactly like notebook
+        columns_to_drop = ['class', 'signup_time', 'purchase_time', 'device_id', 
+                         'user_id', 'ip_address', 'browser_source', 'ip_country']
+        existing_cols_to_drop = [col for col in columns_to_drop if col in sample_engineered.columns]
+        
+        X_sample = sample_engineered.drop(columns=existing_cols_to_drop, errors='ignore')
+        
+    else:
+        # Credit card processing
+        engineer = CreditCardFeatureEngineer()
+        sample_engineered = engineer.engineer_features(sample_row.copy(), fit=False)
+        
+        columns_to_drop = data_config.creditcard_drop_columns + ['class', 'Class']
+        existing_cols_to_drop = [col for col in columns_to_drop if col in sample_engineered.columns]
+        
+        X_sample = sample_engineered.drop(columns=existing_cols_to_drop, errors='ignore')
+    
+    return X_sample
 
 # ==================== SIDEBAR ====================
 with st.sidebar:
@@ -309,21 +399,24 @@ if main_page == "Fraud Detector":
                         purchase_time = purchase_time + timedelta(days=days_to_add)
                         signup_time = purchase_time - timedelta(hours=time_since_signup)
                         
-                        # Get sample row structure
+                        # Get sample row structure from the loaded data
                         sample_row = df.iloc[0:1].copy()
                         sample_row['purchase_value'] = purchase_value
                         sample_row['age'] = age
                         sample_row['signup_time'] = signup_time.strftime('%Y-%m-%d %H:%M:%S')
                         sample_row['purchase_time'] = purchase_time.strftime('%Y-%m-%d %H:%M:%S')
                         
-                        # Load processed data
+                        # Process through full pipeline (matching notebook)
+                        X_sample = process_single_transaction_for_prediction(sample_row, df, ds_name)
+                        
+                        # Load processed data to get the preprocessor
                         if ds_name in st.session_state.processed_data:
                             df_processed = st.session_state.processed_data[ds_name]
                         else:
                             loader = DataLoader()
                             df_processed = loader.load_processed_data(ds_name)
                         
-                        # Split and preprocess
+                        # Fit preprocessor on training data
                         y = df_processed[data_config.target_column]
                         X = df_processed.drop(columns=[data_config.target_column])
                         
@@ -335,68 +428,42 @@ if main_page == "Fraud Detector":
                         preprocessor = DataPreprocessor(use_smote=False)
                         X_train_proc, _ = preprocessor.fit_transform(X_train, y_train)
                         
-                        # Prepare sample
-                        sample_prepared = prepare_features(
-                            sample_row.copy(),
-                            dataset_type='fraud',
-                            drop_columns=data_config.fraud_drop_columns,
-                            fit=False
-                        )
+                        # Transform sample (ensure correct columns)
+                        missing_cols = set(X_train.columns) - set(X_sample.columns)
+                        for col in missing_cols:
+                            X_sample[col] = 0
                         
-                        for col in ['class', 'Class']:
-                            if col in sample_prepared.columns:
-                                sample_prepared = sample_prepared.drop(columns=[col])
+                        X_sample = X_sample[X_train.columns]
+                        X_sample_proc = preprocessor.transform(X_sample)
                         
-                        training_columns = X_train_proc.columns
-                        for col in training_columns:
-                            if col not in sample_prepared.columns:
-                                sample_prepared[col] = 0
+                        # Load model and predict
+                        predictor = load_predictor(selected_model, ds_name)
+                        result = predictor.predict(X_sample_proc, return_proba=True, threshold=threshold)
                         
-                        sample_prepared = sample_prepared[training_columns]
-                        sample_transformed = preprocessor.transform(sample_prepared)
-                        
-                        # Load model and predict (supports both naming conventions)
-                        model_path = get_model_path(selected_model, ds_name)
-                        trainer = ModelTrainer()
-                        trainer.load_model(model_path)
-                        
-                        with st.spinner("Analyzing..."):
-                            y_pred_proba = trainer.predict_proba(sample_transformed)
-                            y_pred = (y_pred_proba[:, 1] >= threshold).astype(int)
-                            
-                            fraud_prob = float(y_pred_proba[0, 1])
-                            is_fraud = bool(y_pred[0])
-                            confidence = max(fraud_prob, 1 - fraud_prob)
-                            
-                            if fraud_prob < 0.3:
-                                risk_level, risk_color = 'Low', '🟢'
-                            elif fraud_prob < 0.6:
-                                risk_level, risk_color = 'Medium', '🟡'
-                            elif fraud_prob < 0.8:
-                                risk_level, risk_color = 'High', '🟠'
-                            else:
-                                risk_level, risk_color = 'Critical', '🔴'
-                        
+                        # Display results
                         st.markdown("---")
-                        st.markdown("### 📊 Analysis Results")
-                        
-                        if is_fraud:
-                            st.error("**FRAUD DETECTED**")
-                        else:
-                            st.success("**LEGITIMATE TRANSACTION**")
+                        st.markdown("### Analysis Results")
                         
                         col1, col2, col3 = st.columns(3)
+                        
                         with col1:
-                            st.metric("Fraud Probability", f"{fraud_prob:.1%}")
+                            risk_color = "🔴" if result['predictions'][0] == 1 else "🟢"
+                            risk_text = "FRAUD" if result['predictions'][0] == 1 else "LEGITIMATE"
+                            st.metric("Prediction", f"{risk_color} {risk_text}")
+                        
                         with col2:
-                            st.metric("Confidence", f"{confidence:.1%}")
+                            prob = result['fraud_probability'][0] * 100
+                            st.metric("Fraud Probability", f"{prob:.1f}%")
+                        
                         with col3:
-                            st.metric("Risk Level", f"{risk_color} {risk_level}")
+                            confidence = max(result['fraud_probability'][0], 1 - result['fraud_probability'][0]) * 100
+                            st.metric("Confidence", f"{confidence:.1f}%")
                         
                         # Gauge chart
                         fig = go.Figure(go.Indicator(
-                            mode="gauge+number",
-                            value=fraud_prob * 100,
+                            mode="gauge+number+delta",
+                            value=result['fraud_probability'][0] * 100,
+                            domain={'x': [0, 1], 'y': [0, 1]},
                             title={'text': "Fraud Risk Score"},
                             gauge={
                                 'axis': {'range': [0, 100]},
@@ -437,15 +504,51 @@ if main_page == "Fraud Detector":
                     value=min(10, len(df))
                 )
                 
-                if st.button("🔍 Predict Batch", type="primary", use_container_width=True):
+                if st.button("Predict Batch", type="primary", use_container_width=True):
                     try:
-                        predictor = load_predictor(selected_model, ds_name)
+                        # Sample data
                         sample_data = df.sample(n=num_samples, random_state=42)
                         
                         with st.spinner(f"Processing {num_samples} samples..."):
-                            predictions = predictor.predict_batch(
-                                sample_data, threshold=threshold, include_details=True
+                            # Process through full pipeline (matching notebook)
+                            X_batch = process_single_transaction_for_prediction(sample_data, df, ds_name)
+                            
+                            # Load processed data and fit preprocessor
+                            if ds_name in st.session_state.processed_data:
+                                df_processed = st.session_state.processed_data[ds_name]
+                            else:
+                                loader = DataLoader()
+                                df_processed = loader.load_processed_data(ds_name)
+                            
+                            y = df_processed[data_config.target_column]
+                            X = df_processed.drop(columns=[data_config.target_column])
+                            
+                            X_train, X_test, y_train, y_test = train_test_split(
+                                X, y, test_size=data_config.test_size,
+                                random_state=data_config.random_state, stratify=y
                             )
+                            
+                            preprocessor = DataPreprocessor(use_smote=False)
+                            X_train_proc, _ = preprocessor.fit_transform(X_train, y_train)
+                            
+                            # Ensure correct columns
+                            missing_cols = set(X_train.columns) - set(X_batch.columns)
+                            for col in missing_cols:
+                                X_batch[col] = 0
+                            
+                            X_batch = X_batch[X_train.columns]
+                            X_batch_proc = preprocessor.transform(X_batch)
+                            
+                            # Predict
+                            predictor = load_predictor(selected_model, ds_name)
+                            result = predictor.predict(X_batch_proc, return_proba=True, threshold=threshold)
+                            
+                            predictions = pd.DataFrame({
+                                'is_fraud': result['predictions'],
+                                'fraud_probability': result['fraud_probability'],
+                                'confidence': [max(p, 1-p) for p in result['fraud_probability']],
+                                'risk_level': [predictor._get_risk_level(p) for p in result['fraud_probability']]
+                            })
                         
                         fraud_count = predictions['is_fraud'].sum()
                         fraud_pct = (fraud_count / len(predictions)) * 100
@@ -495,7 +598,7 @@ if main_page == "Fraud Detector":
                         try:
                             predictor = load_predictor(selected_model, ds_name)
                             
-                            with st.spinner(f"🔄 Processing {len(upload_df):,} records..."):
+                            with st.spinner(f"Processing {len(upload_df):,} records..."):
                                 predictions = predictor.predict_batch(
                                     upload_df, threshold=threshold, include_details=True
                                 )
@@ -576,45 +679,84 @@ elif main_page == "🔧 Model Management":
     
     # Feature Engineering
     elif sub_page == "Feature Engineering":
-        st.markdown('<div class="main-header"><h1>🔧 Feature Engineering</h1><p>Create features</p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="main-header"><h1>🔧 Feature Engineering</h1><p>Create features (matching notebook pipeline)</p></div>', unsafe_allow_html=True)
         
         if df is None:
             st.error("Data not found")
         else:
             st.info(f"Dataset: {df.shape[0]:,} rows × {df.shape[1]} columns")
             
+            # Show IP country merge status for fraud dataset
+            if ds_name == 'fraud' and 'ip_country' in df.columns:
+                country_count = df['ip_country'].notna().sum()
+                high_risk_count = df['is_high_risk_country'].sum() if 'is_high_risk_country' in df.columns else 0
+                st.success(f"✓ IP-to-Country mapping: {country_count:,} records mapped")
+                if high_risk_count > 0:
+                    st.success(f"✓ High-risk country feature: {high_risk_count:,} flagged transactions")
+            
             if st.button("Engineer Features", type="primary"):
                 with st.spinner("Processing..."):
                     try:
+                        # Feature engineering (same as notebook)
                         if ds_name == 'fraud':
                             engineer = FraudDataFeatureEngineer()
                         else:
                             engineer = CreditCardFeatureEngineer()
                         
                         df_engineered = engineer.engineer_features(df.copy(), fit=True)
-                        st.success(f"Complete: {df_engineered.shape[0]:,} × {df_engineered.shape[1]}")
+                        st.success(f"✓ Feature engineering complete: {df_engineered.shape[0]:,} × {df_engineered.shape[1]}")
                         
                         new_features = [col for col in df_engineered.columns if col not in df.columns]
-                        st.success(f"Created {len(new_features)} features")
+                        st.success(f"✓ Created {len(new_features)} new features")
                         
-                        target_col = 'class' if 'class' in df.columns else 'Class'
-                        drop_cols = data_config.fraud_drop_columns if ds_name == 'fraud' else data_config.creditcard_drop_columns
+                        # Prepare for training (drop columns exactly like notebook)
+                        target_col = 'class' if 'class' in df_engineered.columns else 'Class'
                         
-                        df_processed = prepare_features(
-                            df.copy(), dataset_type=ds_name, drop_columns=drop_cols, fit=True
-                        )
-                        df_processed[data_config.target_column] = df[target_col].values
+                        if ds_name == 'fraud':
+                            # Match notebook's column dropping logic
+                            columns_to_drop = ['class', 'signup_time', 'purchase_time', 'device_id', 
+                                             'user_id', 'ip_address', 'browser_source', 'ip_country']
+                        else:
+                            columns_to_drop = data_config.creditcard_drop_columns + [target_col]
                         
+                        # Keep only columns that exist
+                        existing_cols_to_drop = [col for col in columns_to_drop if col in df_engineered.columns]
+                        
+                        # Create processed data with target column preserved separately
+                        X = df_engineered.drop(columns=existing_cols_to_drop)
+                        y = df_engineered[target_col]
+                        
+                        # Recombine for storage
+                        df_processed = X.copy()
+                        df_processed[data_config.target_column] = y.values
+                        
+                        st.info(f"✓ Dropped columns: {', '.join(existing_cols_to_drop)}")
+                        st.info(f"✓ Final feature count: {X.shape[1]}")
+                        
+                        # Store in session state
                         st.session_state.processed_data[ds_name] = df_processed
                         
+                        # Save processed data
                         loader = DataLoader()
                         loader.save_processed_data(df_processed, ds_name)
                         
-                        st.success("Saved!")
-                        st.dataframe(df_processed.head(), use_container_width=True)
+                        st.success("✓ Processed data saved!")
+                        
+                        with st.expander("Preview Processed Data"):
+                            st.dataframe(df_processed.head(20), use_container_width=True)
+                        
+                        with st.expander("Feature Summary"):
+                            st.write(f"**Total features:** {X.shape[1]}")
+                            st.write(f"**Feature dtypes:**")
+                            dtype_counts = X.dtypes.value_counts()
+                            for dtype, count in dtype_counts.items():
+                                st.write(f"- {dtype}: {count} features")
                         
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
+                        with st.expander("Error Details"):
+                            import traceback
+                            st.code(traceback.format_exc())
     
     # Train Models
     elif sub_page == "Train Models":
@@ -637,7 +779,7 @@ elif main_page == "🔧 Model Management":
                 use_smote = st.checkbox("Use SMOTE", value=True)
                 perform_cv = st.checkbox("Cross-Validation", value=True)
             
-            if st.button("🚀 Start Training", type="primary", use_container_width=True):
+            if st.button("Start Training", type="primary", use_container_width=True):
                 if not selected_models:
                     st.error("Select at least one model")
                 else:
@@ -672,7 +814,7 @@ elif main_page == "🔧 Model Management":
                         status_text = st.empty()
                         
                         for idx, model_type in enumerate(selected_models):
-                            status_text.text(f"🔄 Training {model_type.replace('_', ' ').title()}...")
+                            status_text.text(f"Training {model_type.replace('_', ' ').title()}...")
                             
                             trainer = ModelTrainer(model_type=model_type)
                             metrics = trainer.train(X_train_proc, y_train_proc, validate=perform_cv)
@@ -744,7 +886,7 @@ elif main_page == "🔧 Model Management":
     
     # Evaluate Models
     elif sub_page == "Evaluate Models":
-        st.markdown('<div class="main-header"><h1>📈 Evaluate Models</h1><p>Analyze performance</p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="main-header"><h1>Evaluate Models</h1><p>Analyze performance</p></div>', unsafe_allow_html=True)
         
         if ds_name not in st.session_state.trained_models:
             st.warning("No models found. Train models first!")
