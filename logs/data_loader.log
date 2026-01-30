@@ -357,3 +357,12 @@ class
 Name: count, dtype: int64
 2026-01-30 17:30:21,668 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
 2026-01-30 17:30:21,702 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
+2026-01-30 18:16:10,593 - src.data_loader - INFO - Loading fraud data from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/Fraud_Data.csv
+2026-01-30 18:16:10,806 - src.data_loader - INFO - Successfully loaded 151112 fraud records
+2026-01-30 18:16:10,807 - src.data_loader - INFO - fraud class distribution:
+class
+0    136961
+1     14151
+Name: count, dtype: int64
+2026-01-30 18:16:35,254 - src.data_loader - INFO - Saving processed fraud data to /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/fraud_data_processed.csv
+2026-01-30 18:16:35,799 - src.data_loader - INFO - Successfully saved 151112 records
