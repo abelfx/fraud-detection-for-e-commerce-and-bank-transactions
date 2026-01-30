@@ -399,3 +399,39 @@
 2026-01-30 17:16:30,572 - src.preprocessor - INFO - Fitted and scaled features
 2026-01-30 17:16:30,585 - src.preprocessor - INFO - Transforming data
 2026-01-30 17:16:30,586 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:24:28,989 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:24:29,065 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:24:29,078 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:24:29,079 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:26:44,760 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:26:44,852 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:26:44,853 - src.preprocessor - INFO - Original class distribution: {0: 109568, 1: 11321}
+2026-01-30 17:26:44,981 - src.preprocessor - INFO - Resampled class distribution: {0: 109568, 1: 54784}
+2026-01-30 17:26:44,981 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:26:44,994 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:27:14,537 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:27:14,635 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:27:14,648 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:27:14,650 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:27:29,626 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:27:29,744 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:27:29,756 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:27:29,757 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:27:43,925 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:27:44,030 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:27:44,042 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:27:44,044 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:28:10,729 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:28:10,818 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:28:10,829 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:28:10,831 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:28:33,479 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:28:33,550 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:28:33,562 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:28:33,564 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-01-30 17:30:23,660 - src.preprocessor - INFO - Fitting and transforming training data
+2026-01-30 17:30:23,731 - src.preprocessor - INFO - Fitted and scaled features
+2026-01-30 17:30:23,732 - src.preprocessor - INFO - Original class distribution: {0: 109568, 1: 11321}
+2026-01-30 17:30:23,863 - src.preprocessor - INFO - Resampled class distribution: {0: 109568, 1: 54784}
+2026-01-30 17:30:23,864 - src.preprocessor - INFO - Transforming data
+2026-01-30 17:30:23,876 - src.preprocessor - INFO - Scaled features using fitted scaler
