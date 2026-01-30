@@ -1,0 +1,998 @@
+2026-01-30 11:11:06,153 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:11:06,213 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:11:06,218 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:11:06,290 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:11:06,292 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:11:06,297 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:11:06,314 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:11:06,372 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:11:06,393 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:11:06,440 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:11:06,443 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:11:06,510 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:11:06,513 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:11:06,516 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:11:06,532 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:11:06,583 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:11:06,590 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:11:06,592 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 11:27:43,890 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:27:43,896 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:27:43,898 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:27:43,898 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:27:43,898 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:27:43,900 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:27:43,900 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:27:43,903 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:27:43,903 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:27:43,906 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:27:43,907 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:27:43,907 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:27:43,908 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:27:43,909 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:27:43,909 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:27:43,912 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:27:43,912 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:27:43,913 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:28:04,855 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:28:04,859 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:28:04,859 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:28:04,860 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:28:04,860 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:28:04,861 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:28:04,862 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:28:04,864 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:28:04,865 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:28:04,868 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:28:04,869 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:28:04,869 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:28:04,870 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:28:04,871 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:28:04,872 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:28:04,875 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:28:04,875 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:28:04,876 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:29:00,697 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:29:00,701 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:29:00,703 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:29:00,703 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:29:00,704 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:29:00,705 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:29:00,705 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:29:00,708 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:29:00,709 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:29:00,711 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:29:00,712 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:29:00,713 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:29:00,713 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:29:00,714 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:29:00,714 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:29:00,717 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:29:00,718 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:29:00,718 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:29:11,246 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:29:11,249 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:29:11,250 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:29:11,250 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:29:11,251 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:29:11,251 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:29:11,252 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:29:11,254 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:29:11,254 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:29:11,257 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:29:11,258 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:29:11,258 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:29:11,259 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:29:11,259 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:29:11,260 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:29:11,262 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:29:11,263 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:29:11,264 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:30:39,802 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:30:39,865 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:30:39,868 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:30:39,940 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:30:39,943 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:30:39,947 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:30:39,965 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:30:40,026 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:30:40,045 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:30:40,094 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:30:40,096 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:30:40,165 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:30:40,166 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:30:40,170 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:30:40,187 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:30:40,239 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:30:40,245 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:30:40,249 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 11:31:31,730 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:31:31,733 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:31:31,734 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:31:31,735 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:31:31,735 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:31:31,736 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:31:31,737 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:31:31,740 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:31:31,740 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:31:31,743 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:31:31,744 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:31:31,745 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:31:31,745 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:31:31,747 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:31:31,747 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:31:31,750 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:31:31,751 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:31:31,752 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:34:41,431 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:34:41,488 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:34:41,493 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:34:41,565 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:34:41,568 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:34:41,572 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:34:41,590 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:34:41,661 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:34:41,682 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:34:41,737 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:34:41,741 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:34:41,808 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:34:41,811 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:34:41,814 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:34:41,831 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:34:41,882 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:34:41,888 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:34:41,891 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 11:35:17,414 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:35:17,417 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:35:17,418 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:35:17,419 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:35:17,420 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:35:17,421 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:35:17,421 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:35:17,424 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:35:17,424 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:35:17,424 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:38:10,188 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:38:10,249 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:38:10,254 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:38:10,326 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:38:10,327 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:38:10,332 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:38:10,349 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:38:10,408 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:38:10,424 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:38:10,473 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:38:10,476 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:38:10,544 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:38:10,546 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:38:10,549 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:38:10,566 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:38:10,618 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:38:10,625 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:38:10,628 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 11:38:55,069 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:38:55,073 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:38:55,074 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:38:55,074 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:38:55,075 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:38:55,076 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:38:55,076 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:38:55,079 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:38:55,079 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:38:55,080 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:43:15,235 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:43:15,238 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:43:15,238 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:43:15,239 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:43:15,240 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:43:15,241 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:43:15,241 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:43:15,243 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:43:15,244 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:43:15,244 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:43:35,792 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:43:35,795 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:43:35,796 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:43:35,797 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:43:35,798 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:43:35,799 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:43:35,800 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:43:35,802 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:43:35,802 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:43:35,803 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:44:32,990 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:44:32,992 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:44:32,993 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:44:32,994 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:44:32,994 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:44:32,995 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:44:32,995 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:44:32,998 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:44:32,998 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:44:32,998 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:44:34,908 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:44:34,911 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:44:34,913 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:44:34,913 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:44:34,914 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:44:34,914 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:44:34,915 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:44:34,917 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:44:34,918 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:44:34,918 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:44:38,929 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:44:38,932 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:44:38,932 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:44:38,933 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:44:38,933 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:44:38,934 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:44:38,935 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:44:38,937 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:44:38,938 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:44:38,938 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:46:02,784 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:46:02,787 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:46:02,788 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:46:02,788 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:46:02,789 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:46:02,790 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:46:02,790 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:46:02,793 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:46:02,793 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:46:02,793 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:46:14,153 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:46:14,157 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:46:14,158 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:46:14,158 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:46:14,159 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:46:14,160 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:46:14,160 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:46:14,163 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:46:14,163 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:46:14,164 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:46:21,061 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:46:21,064 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:46:21,065 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:46:21,066 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:46:21,066 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:46:21,067 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:46:21,068 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:46:21,070 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:46:21,070 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:46:21,071 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:46:28,707 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:46:28,710 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:46:28,712 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:46:28,712 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:46:28,713 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:46:28,714 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:46:28,714 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:46:28,717 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:46:28,718 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:46:28,718 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:48:08,985 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:48:08,989 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:48:08,990 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:48:08,990 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:48:08,991 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:48:08,992 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:48:08,992 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:48:08,995 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:48:08,995 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:48:08,995 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:52:33,261 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:52:33,265 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:52:33,266 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:52:33,267 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:52:33,267 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:52:33,268 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:52:33,269 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:52:33,271 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:52:33,272 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:52:33,272 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:52:38,695 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:52:38,698 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:52:38,698 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:52:38,699 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:52:38,699 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:52:38,700 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:52:38,700 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:52:38,702 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:52:38,703 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:52:38,703 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:53:19,552 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:53:19,555 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:53:19,556 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:53:19,556 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:53:19,557 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:53:19,557 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:53:19,558 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:53:19,560 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:53:19,560 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:53:19,561 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:53:32,553 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:53:32,556 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:53:32,557 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:53:32,557 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:53:32,558 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:53:32,559 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:53:32,559 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:53:32,561 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:53:32,562 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:53:32,562 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:53:40,387 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:53:40,390 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:53:40,391 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:53:40,391 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:53:40,392 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:53:40,393 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:53:40,393 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:53:40,395 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:53:40,396 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:53:40,396 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:53:53,412 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:53:53,415 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:53:53,415 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:53:53,416 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:53:53,416 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:53:53,417 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:53:53,418 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:53:53,420 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:53:53,420 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:53:53,420 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:54:01,858 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:54:01,861 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:54:01,861 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:54:01,862 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:54:01,862 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:54:01,863 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:54:01,864 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:54:01,866 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:54:01,866 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:54:01,867 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:57:21,044 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:57:21,047 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:57:21,048 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:57:21,048 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:57:21,049 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:57:21,049 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:57:21,050 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:57:21,052 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:57:21,053 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:57:21,053 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:57:28,478 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:57:28,481 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:57:28,481 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:57:28,482 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:57:28,482 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:57:28,483 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:57:28,484 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:57:28,486 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:57:28,486 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:57:28,487 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:57:35,570 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:57:35,572 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:57:35,573 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:57:35,574 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:57:35,574 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:57:35,575 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:57:35,575 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:57:35,577 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:57:35,578 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:57:35,578 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:58:14,965 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:58:14,968 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:58:14,968 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:58:14,969 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:58:14,969 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:58:14,970 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:58:14,971 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:58:14,973 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:58:14,973 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:58:14,974 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:58:40,193 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:58:40,195 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:58:40,196 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:58:40,196 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:58:40,197 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:58:40,198 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:58:40,198 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:58:40,201 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:58:40,202 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:58:40,202 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:58:50,027 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:58:50,029 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:58:50,030 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:58:50,030 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:58:50,031 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:58:50,032 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:58:50,033 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:58:50,035 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:58:50,035 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:58:50,036 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:59:02,693 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:59:02,696 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:59:02,696 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:59:02,697 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:59:02,697 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:59:02,698 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:59:02,699 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:59:02,701 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:59:02,701 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:59:02,702 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:59:08,775 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:59:08,778 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:59:08,779 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:59:08,779 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:59:08,780 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:59:08,781 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:59:08,781 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:59:08,783 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:59:08,783 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:59:08,784 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 11:59:16,125 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 11:59:16,128 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 11:59:16,129 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 11:59:16,129 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 11:59:16,130 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 11:59:16,130 - src.feature_engineer - INFO - Created age group features
+2026-01-30 11:59:16,131 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 11:59:16,133 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 11:59:16,134 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 11:59:16,134 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 12:01:34,214 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:01:34,277 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:01:34,282 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:01:34,358 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:01:34,360 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:01:34,365 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:01:34,382 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:01:34,449 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:01:34,458 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 12:01:34,462 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 12:24:52,678 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 12:24:52,685 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 12:24:52,697 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 12:24:52,705 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:24:52,738 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 12:24:52,747 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 12:24:52,759 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 12:24:52,766 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:24:52,800 - src.feature_engineer - INFO - Dropped columns: ['Time', 'Amount']
+2026-01-30 12:24:52,855 - src.feature_engineer - INFO - Final feature set: 40 columns
+2026-01-30 12:28:01,790 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 12:28:01,798 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 12:28:01,808 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 12:28:01,812 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:28:01,844 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 12:28:01,852 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 12:28:01,864 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 12:28:01,870 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:28:01,906 - src.feature_engineer - INFO - Dropped columns: ['Time', 'Amount']
+2026-01-30 12:28:01,973 - src.feature_engineer - INFO - Final feature set: 40 columns
+2026-01-30 12:38:37,041 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:38:37,146 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:38:37,151 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:38:37,253 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:38:37,256 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:38:37,260 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:38:37,279 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:38:37,336 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:38:37,377 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:38:37,459 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:38:37,465 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:38:37,588 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:38:37,591 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:38:37,598 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:38:37,626 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:38:37,707 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:38:37,716 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 12:38:37,719 - src.feature_engineer - INFO - Final feature set: 22 columns
+2026-01-30 12:39:51,488 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:39:51,493 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:39:51,496 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:39:51,496 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:39:51,498 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:39:51,499 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:39:51,500 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:39:51,504 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:39:51,506 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 12:39:51,507 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 12:39:52,468 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:39:52,472 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:39:52,474 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:39:52,475 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:39:52,476 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:39:52,478 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:39:52,479 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:39:52,484 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:39:52,485 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 12:39:52,485 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 12:41:53,124 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 12:41:53,127 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 12:41:53,128 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 12:41:53,129 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 12:41:53,129 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 12:41:53,130 - src.feature_engineer - INFO - Created age group features
+2026-01-30 12:41:53,131 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 12:41:53,133 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 12:41:53,134 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 12:41:53,134 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:37:39,113 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:37:39,118 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:37:39,120 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:37:39,121 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:37:39,122 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:37:39,124 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:37:39,126 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:37:39,131 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:37:39,132 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:37:39,133 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:37:48,115 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:37:48,121 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:37:48,122 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:37:48,123 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:37:48,124 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:37:48,127 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:37:48,127 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:37:48,132 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:37:48,133 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:37:48,134 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:37:54,824 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:37:54,829 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:37:54,831 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:37:54,832 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:37:54,833 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:37:54,835 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:37:54,836 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:37:54,840 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:37:54,841 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:37:54,842 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:38:00,916 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:38:00,921 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:38:00,922 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:38:00,923 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:38:00,924 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:38:00,925 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:38:00,926 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:38:00,930 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:38:00,931 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:38:00,932 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:38:01,795 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:38:01,800 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:38:01,801 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:38:01,802 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:38:01,803 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:38:01,805 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:38:01,805 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:38:01,808 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:38:01,810 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:38:01,811 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:39:11,930 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:39:12,041 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:39:12,049 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:39:12,171 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:39:12,175 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:39:12,183 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:39:12,211 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:39:12,313 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:42:26,846 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 13:42:26,857 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 13:42:26,873 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 13:42:26,879 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:43:43,093 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:43:43,113 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:43:43,119 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:43:43,124 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:43:43,131 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:43:43,138 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:43:43,139 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:43:43,154 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:43:43,155 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:43:43,159 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:49:22,675 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:49:22,681 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:49:22,682 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:49:22,683 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:49:22,683 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:49:22,685 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:49:22,686 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:49:22,691 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:49:22,692 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:49:22,693 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 13:58:08,827 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 13:58:08,832 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 13:58:08,833 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 13:58:08,834 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 13:58:08,835 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 13:58:08,838 - src.feature_engineer - INFO - Created age group features
+2026-01-30 13:58:08,839 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 13:58:08,843 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 13:58:08,844 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 13:58:08,845 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:07:03,162 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:07:03,167 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:07:03,169 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:07:03,169 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:07:03,170 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:07:03,172 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:07:03,172 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:07:03,177 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:07:03,178 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:07:03,178 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:27,781 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:27,785 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:27,787 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:27,787 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:27,788 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:27,790 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:27,790 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:27,795 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:27,797 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:27,797 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:42,081 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:42,084 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:42,085 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:42,086 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:42,086 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:42,087 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:42,088 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:42,093 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:42,094 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:42,095 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:44,086 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:44,090 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:44,091 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:44,091 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:44,092 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:44,093 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:44,094 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:44,099 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:44,100 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:44,101 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:45,849 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:45,852 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:45,854 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:45,854 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:45,855 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:45,856 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:45,857 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:45,861 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:45,862 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:45,863 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:46,626 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:46,630 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:46,631 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:46,631 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:46,633 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:46,635 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:46,636 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:46,640 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:46,641 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:46,642 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:47,420 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:47,424 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:47,425 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:47,426 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:47,427 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:47,429 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:47,430 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:47,435 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:47,436 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:47,436 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:17:54,388 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:17:54,392 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:17:54,393 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:17:54,394 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:17:54,394 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:17:54,396 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:17:54,396 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:17:54,402 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:17:54,402 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:17:54,403 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:18:19,709 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:18:19,713 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:18:19,714 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:18:19,714 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:18:19,715 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:18:19,716 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:18:19,717 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:18:19,722 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:18:19,722 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:18:19,723 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:18:33,483 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:18:33,486 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:18:33,488 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:18:33,489 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:18:33,490 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:18:33,492 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:18:33,493 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:18:33,498 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:18:33,499 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:18:33,500 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:18:41,943 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:18:41,947 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:18:41,948 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:18:41,949 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:18:41,950 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:18:41,951 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:18:41,952 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:18:41,956 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:18:41,958 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:18:41,958 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:18:54,197 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:18:54,200 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:18:54,201 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:18:54,202 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:18:54,203 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:18:54,205 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:18:54,205 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:18:54,210 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:18:54,211 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:18:54,211 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:19:07,966 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:19:07,970 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:19:07,971 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:19:07,971 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:19:07,973 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:19:07,974 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:19:07,976 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:19:07,980 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:19:07,980 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:19:07,981 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:19:15,218 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:19:15,221 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:19:15,222 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:19:15,223 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:19:15,224 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:19:15,225 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:19:15,226 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:19:15,230 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:19:15,232 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:19:15,232 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:19:20,815 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:19:20,818 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:19:20,819 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:19:20,819 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:19:20,820 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:19:20,822 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:19:20,822 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:19:20,827 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:19:20,829 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:19:20,830 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:19:29,418 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:19:29,422 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:19:29,423 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:19:29,423 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:19:29,425 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:19:29,426 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:19:29,427 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:19:29,431 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:19:29,432 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:19:29,433 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:19:36,695 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:19:36,700 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:19:36,701 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:19:36,702 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:19:36,703 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:19:36,705 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:19:36,706 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:19:36,710 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:19:36,711 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:19:36,711 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:48:11,124 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:48:11,128 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:48:11,130 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:48:11,131 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:48:11,131 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:48:11,133 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:48:11,134 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:48:11,137 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:48:11,138 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:48:11,138 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 14:49:15,849 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 14:49:15,853 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 14:49:15,854 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 14:49:15,855 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 14:49:15,856 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 14:49:15,858 - src.feature_engineer - INFO - Created age group features
+2026-01-30 14:49:15,859 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 14:49:15,862 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 14:49:15,863 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 14:49:15,864 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 15:01:50,216 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 15:01:50,219 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 15:01:50,220 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 15:01:50,221 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 15:01:50,222 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 15:01:50,223 - src.feature_engineer - INFO - Created age group features
+2026-01-30 15:01:50,223 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 15:01:50,226 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 15:01:50,227 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 15:01:50,227 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 16:09:21,536 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 16:09:21,540 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 16:09:21,541 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 16:09:21,541 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 16:09:21,542 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 16:09:21,543 - src.feature_engineer - INFO - Created age group features
+2026-01-30 16:09:21,543 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 16:09:21,546 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 16:09:21,547 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 16:09:21,547 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 16:30:41,372 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-30 16:30:41,379 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-30 16:30:41,389 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-30 16:30:41,393 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 16:43:08,499 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 16:43:08,564 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 16:43:08,568 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 16:43:08,639 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 16:43:08,641 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 16:43:08,645 - src.feature_engineer - INFO - Created age group features
+2026-01-30 16:43:08,661 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 16:43:08,727 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 16:59:24,310 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 16:59:24,314 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 16:59:24,315 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 16:59:24,315 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 16:59:24,316 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 16:59:24,317 - src.feature_engineer - INFO - Created age group features
+2026-01-30 16:59:24,318 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 16:59:24,320 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 16:59:24,320 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 16:59:24,320 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 16:59:26,258 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 16:59:26,260 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 16:59:26,261 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 16:59:26,262 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 16:59:26,262 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 16:59:26,263 - src.feature_engineer - INFO - Created age group features
+2026-01-30 16:59:26,264 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 16:59:26,266 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 16:59:26,266 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 16:59:26,267 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 17:00:32,781 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:00:32,784 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:00:32,785 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:00:32,786 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:00:32,786 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:00:32,787 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:00:32,788 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:00:32,790 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:00:32,790 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 17:00:32,791 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 17:01:14,379 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:01:14,381 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:01:14,382 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:01:14,383 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:01:14,383 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:01:14,384 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:01:14,385 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:01:14,387 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:01:14,388 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 17:01:14,388 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 17:03:00,331 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:03:00,334 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:03:00,335 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:03:00,335 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:03:00,336 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:03:00,336 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:03:00,337 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:03:00,339 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:03:00,339 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id']
+2026-01-30 17:03:00,340 - src.feature_engineer - INFO - Final feature set: 15 columns
+2026-01-30 17:12:08,267 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:12:08,272 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:12:08,273 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:12:08,273 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:12:08,274 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:12:08,275 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:12:08,275 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:12:08,278 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:12:08,278 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:12:08,278 - src.feature_engineer - INFO - Final feature set: 14 columns
+2026-01-30 17:12:19,028 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:12:19,084 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:12:19,088 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:12:19,161 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:12:19,162 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:12:19,166 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:12:19,183 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:12:19,244 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:12:19,261 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:12:19,308 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:12:19,311 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:12:19,378 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:12:19,380 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:12:19,383 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:12:19,402 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:12:19,451 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:12:19,457 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:12:19,459 - src.feature_engineer - INFO - Final feature set: 21 columns
+2026-01-30 17:12:30,341 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:12:30,345 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:12:30,345 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:12:30,346 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:12:30,347 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:12:30,348 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:12:30,348 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:12:30,351 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:12:30,351 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:12:30,352 - src.feature_engineer - INFO - Final feature set: 14 columns
+2026-01-30 17:12:41,126 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:12:41,129 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:12:41,130 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:12:41,131 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:12:41,131 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:12:41,133 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:12:41,133 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:12:41,136 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:12:41,136 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:12:41,136 - src.feature_engineer - INFO - Final feature set: 14 columns
+2026-01-30 17:14:24,314 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:14:24,370 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:14:24,373 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:14:24,442 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:14:24,445 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:14:24,448 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:14:24,465 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:14:24,509 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:14:24,528 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:14:24,575 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:14:24,578 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:14:24,644 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:14:24,646 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:14:24,649 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:14:24,666 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:14:24,709 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:14:24,715 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:14:24,717 - src.feature_engineer - INFO - Final feature set: 21 columns
+2026-01-30 17:14:49,336 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:14:49,340 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:14:49,341 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:14:49,341 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:14:49,342 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:14:49,343 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:14:49,343 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:14:49,346 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:14:49,346 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:14:49,347 - src.feature_engineer - INFO - Final feature set: 14 columns
+2026-01-30 17:15:30,677 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:15:30,735 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:15:30,738 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:15:30,809 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:15:30,811 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:15:30,814 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:15:30,832 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:15:30,889 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:15:30,909 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:15:30,957 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:15:30,960 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:15:31,029 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:15:31,031 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:15:31,034 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:15:31,050 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:15:31,099 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:15:31,105 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:15:31,108 - src.feature_engineer - INFO - Final feature set: 21 columns
+2026-01-30 17:16:08,436 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:16:08,440 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:16:08,441 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:16:08,441 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:16:08,442 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:16:08,443 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:16:08,443 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:16:08,446 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:16:08,446 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:16:08,447 - src.feature_engineer - INFO - Final feature set: 14 columns
+2026-01-30 17:16:30,573 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-30 17:16:30,576 - src.feature_engineer - INFO - Created temporal features
+2026-01-30 17:16:30,577 - src.feature_engineer - INFO - Created time difference features
+2026-01-30 17:16:30,577 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-30 17:16:30,578 - src.feature_engineer - INFO - Created purchase value features
+2026-01-30 17:16:30,579 - src.feature_engineer - INFO - Created age group features
+2026-01-30 17:16:30,579 - src.feature_engineer - INFO - Created interaction features
+2026-01-30 17:16:30,582 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-30 17:16:30,583 - src.feature_engineer - INFO - Dropped columns: ['user_id', 'signup_time', 'purchase_time', 'device_id', 'ip_address', 'browser_source']
+2026-01-30 17:16:30,583 - src.feature_engineer - INFO - Final feature set: 14 columns

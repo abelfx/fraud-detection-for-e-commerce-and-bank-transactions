@@ -1,0 +1,85 @@
+2026-01-30 11:13:16,297 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:13:16,318 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:13:16,319 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:13:16,319 - src.predictor - WARNING - Missing features: {'ip_as_int', 'log_purchase_value', 'source_SEO', 'browser_FireFox', 'day_of_month', 'is_weekend', 'browser_Opera', 'source_Direct', 'ip_address', 'purchase_value_rounded', 'age_group', 'quick_purchase', 'browser_Safari', 'browser_IE', 'month', 'sex_M'}
+2026-01-30 11:14:48,255 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:14:48,277 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:14:48,278 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:14:48,278 - src.predictor - WARNING - Missing features: {'ip_as_int', 'log_purchase_value', 'source_SEO', 'browser_FireFox', 'day_of_month', 'is_weekend', 'browser_Opera', 'source_Direct', 'ip_address', 'purchase_value_rounded', 'age_group', 'quick_purchase', 'browser_Safari', 'browser_IE', 'month', 'sex_M'}
+2026-01-30 11:14:54,745 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:14:54,765 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:14:54,768 - src.predictor - INFO - Processing batch of 10 transactions
+2026-01-30 11:14:54,768 - src.predictor - INFO - Making predictions on 10 samples
+2026-01-30 11:14:54,768 - src.predictor - WARNING - Missing features: {'ip_as_int', 'log_purchase_value', 'source_SEO', 'browser_FireFox', 'day_of_month', 'is_weekend', 'hour_of_day', 'browser_Opera', 'source_Direct', 'sex_M', 'age_group', 'purchase_value_rounded', 'quick_purchase', 'browser_Safari', 'browser_IE', 'month', 'day_of_week', 'time_since_signup_hours'}
+2026-01-30 11:14:54,770 - src.predictor - WARNING - Extra features will be ignored: {'sex', 'source', 'user_id', 'browser', 'device_id', 'purchase_time', 'signup_time', 'class'}
+2026-01-30 11:15:27,730 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:15:27,751 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:15:27,752 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:15:27,752 - src.predictor - WARNING - Missing features: {'ip_as_int', 'log_purchase_value', 'source_SEO', 'browser_FireFox', 'day_of_month', 'is_weekend', 'browser_Opera', 'source_Direct', 'ip_address', 'purchase_value_rounded', 'age_group', 'quick_purchase', 'browser_Safari', 'browser_IE', 'month', 'sex_M'}
+2026-01-30 11:23:35,341 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:23:35,361 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:23:35,361 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:23:35,361 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:23:35,362 - src.predictor - WARNING - Missing features: {'browser_Opera', 'quick_purchase', 'browser_FireFox', 'ip_as_int', 'hour_of_day', 'source_SEO', 'is_weekend', 'purchase_value_rounded', 'day_of_month', 'browser_Safari', 'month', 'browser_IE', 'time_since_signup_hours', 'log_purchase_value', 'day_of_week', 'sex_M', 'age_group', 'source_Direct'}
+2026-01-30 11:23:35,364 - src.predictor - WARNING - Extra features will be ignored: {'device_id', 'sex', 'signup_time', 'browser', 'user_id', 'source', 'purchase_time', 'class'}
+2026-01-30 11:27:43,913 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:27:43,932 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:27:43,932 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:27:43,932 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:27:43,933 - src.predictor - WARNING - Missing features: {'source_SEO', 'sex_M', 'browser_FireFox', 'browser_IE', 'source_Direct', 'browser_Opera', 'browser_Safari'}
+2026-01-30 11:27:43,934 - src.predictor - WARNING - Extra features will be ignored: {'class'}
+2026-01-30 11:27:57,835 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:27:57,856 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:27:57,858 - src.predictor - INFO - Processing batch of 10 transactions
+2026-01-30 11:27:57,858 - src.predictor - INFO - Making predictions on 10 samples
+2026-01-30 11:27:57,859 - src.predictor - WARNING - Missing features: {'log_purchase_value', 'source_SEO', 'sex_M', 'quick_purchase', 'browser_FireFox', 'browser_IE', 'age_group', 'hour_of_day', 'source_Direct', 'browser_Opera', 'purchase_value_rounded', 'day_of_week', 'time_since_signup_hours', 'is_weekend', 'ip_as_int', 'day_of_month', 'browser_Safari', 'month'}
+2026-01-30 11:27:57,860 - src.predictor - WARNING - Extra features will be ignored: {'browser', 'purchase_time', 'class', 'sex', 'user_id', 'source', 'signup_time', 'device_id'}
+2026-01-30 11:28:04,876 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:28:04,897 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:28:04,897 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:28:04,897 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:28:04,897 - src.predictor - WARNING - Missing features: {'source_SEO', 'sex_M', 'browser_FireFox', 'browser_IE', 'source_Direct', 'browser_Opera', 'browser_Safari'}
+2026-01-30 11:28:04,898 - src.predictor - WARNING - Extra features will be ignored: {'class'}
+2026-01-30 11:29:00,719 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:29:00,739 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:29:00,739 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:29:00,740 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:29:00,740 - src.predictor - WARNING - Missing features: {'browser_FireFox', 'browser_Safari', 'source_SEO', 'browser_Opera', 'browser_IE', 'source_Direct', 'sex_M'}
+2026-01-30 11:29:11,265 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/logistic_regression_fraud_model.joblib
+2026-01-30 11:29:11,267 - src.predictor - INFO - Model loaded: logistic_regression
+2026-01-30 11:29:11,267 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:29:11,267 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:29:11,268 - src.predictor - WARNING - Missing features: {'browser_FireFox', 'browser_Safari', 'source_SEO', 'browser_Opera', 'browser_IE', 'source_Direct', 'sex_M'}
+2026-01-30 11:31:31,752 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:31:31,773 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:31:31,773 - src.predictor - INFO - Processing batch of 1 transactions
+2026-01-30 11:31:31,774 - src.predictor - INFO - Making predictions on 1 samples
+2026-01-30 11:31:31,774 - src.predictor - WARNING - Missing features: {'sex_M', 'browser_Opera', 'browser_FireFox', 'browser_Safari', 'source_Direct', 'browser_IE', 'source_SEO'}
+2026-01-30 11:44:46,057 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 11:44:46,077 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 11:44:46,080 - src.predictor - INFO - Processing batch of 10 transactions
+2026-01-30 11:44:46,080 - src.predictor - INFO - Making predictions on 10 samples
+2026-01-30 11:44:46,081 - src.predictor - WARNING - Missing features: {'browser_IE', 'hour_of_day', 'age_group', 'browser_Safari', 'source_Direct', 'source_SEO', 'log_purchase_value', 'browser_FireFox', 'browser_Opera', 'day_of_week', 'sex_M', 'is_weekend', 'purchase_value_rounded', 'month', 'ip_as_int', 'time_since_signup_hours', 'quick_purchase', 'day_of_month'}
+2026-01-30 11:44:46,083 - src.predictor - WARNING - Extra features will be ignored: {'device_id', 'class', 'browser', 'purchase_time', 'user_id', 'sex', 'source', 'signup_time'}
+2026-01-30 13:34:14,337 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 13:34:14,357 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 13:34:14,361 - src.predictor - INFO - Processing batch of 10 transactions
+2026-01-30 13:34:14,361 - src.predictor - INFO - Making predictions on 10 samples
+2026-01-30 13:34:14,361 - src.predictor - WARNING - Missing features: {'hour_of_day', 'is_weekend', 'month', 'browser_FireFox', 'browser_Opera', 'source_Direct', 'purchase_value_rounded', 'log_purchase_value', 'day_of_month', 'source_SEO', 'age_group', 'browser_Safari', 'time_since_signup_hours', 'quick_purchase', 'day_of_week', 'browser_IE', 'sex_M', 'ip_as_int'}
+2026-01-30 13:34:14,363 - src.predictor - WARNING - Extra features will be ignored: {'user_id', 'source', 'browser', 'signup_time', 'purchase_time', 'device_id', 'sex', 'class'}
+2026-01-30 13:34:36,638 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 13:34:36,658 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 13:34:36,659 - src.predictor - INFO - Processing batch of 151112 transactions
+2026-01-30 13:34:36,659 - src.predictor - INFO - Making predictions on 151112 samples
+2026-01-30 13:34:36,659 - src.predictor - WARNING - Extra features will be ignored: {'class'}
+2026-01-30 13:44:04,715 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 13:44:05,073 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 13:44:05,131 - src.predictor - INFO - Processing batch of 10 transactions
+2026-01-30 13:44:05,132 - src.predictor - INFO - Making predictions on 10 samples
+2026-01-30 13:44:05,133 - src.predictor - WARNING - Missing features: {'browser_IE', 'sex_M', 'browser_Safari', 'quick_purchase', 'time_since_signup_hours', 'is_weekend', 'purchase_value_rounded', 'log_purchase_value', 'browser_FireFox', 'source_SEO', 'day_of_week', 'source_Direct', 'ip_as_int', 'hour_of_day', 'month', 'browser_Opera', 'age_group', 'day_of_month'}
+2026-01-30 13:44:05,149 - src.predictor - WARNING - Extra features will be ignored: {'user_id', 'source', 'device_id', 'browser', 'purchase_time', 'class', 'sex', 'signup_time'}
+2026-01-30 14:48:46,889 - src.predictor - INFO - Loading model from /home/abel/Desktop/fraud-detection/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-01-30 14:48:46,913 - src.predictor - INFO - Model loaded: random_forest
+2026-01-30 14:48:46,914 - src.predictor - INFO - Processing batch of 151112 transactions
+2026-01-30 14:48:46,914 - src.predictor - INFO - Making predictions on 151112 samples
+2026-01-30 14:48:46,914 - src.predictor - WARNING - Extra features will be ignored: {'class'}
