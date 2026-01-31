@@ -1406,3 +1406,11 @@
 2026-01-31 06:45:17,322 - src.feature_engineer - INFO - Created age group features
 2026-01-31 06:45:17,323 - src.feature_engineer - INFO - Created interaction features
 2026-01-31 06:45:17,331 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-31 08:26:02,925 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-31 08:26:03,018 - src.feature_engineer - INFO - Created temporal features
+2026-01-31 08:26:03,022 - src.feature_engineer - INFO - Created time difference features
+2026-01-31 08:26:03,097 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-31 08:26:03,101 - src.feature_engineer - INFO - Created purchase value features
+2026-01-31 08:26:03,106 - src.feature_engineer - INFO - Created age group features
+2026-01-31 08:26:03,121 - src.feature_engineer - INFO - Created interaction features
+2026-01-31 08:26:03,195 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']

@@ -500,3 +500,12 @@ class
 Name: count, dtype: int64
 2026-01-31 06:47:27,349 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
 2026-01-31 06:47:27,397 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
+2026-01-31 08:26:00,851 - src.data_loader - INFO - Loading fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/Fraud_Data.csv
+2026-01-31 08:26:01,193 - src.data_loader - INFO - Successfully loaded 151112 fraud records
+2026-01-31 08:26:01,197 - src.data_loader - INFO - fraud class distribution:
+class
+0    136961
+1     14151
+Name: count, dtype: int64
+2026-01-31 08:26:01,226 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
+2026-01-31 08:26:01,265 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
