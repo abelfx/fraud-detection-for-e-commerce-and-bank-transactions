@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-Command-line interface for fraud detection system.
-"""
 import click
 import pandas as pd
 from pathlib import Path
@@ -39,7 +35,7 @@ def cli():
 )
 def preprocess(dataset, force):
     """Preprocess raw data and engineer features."""
-    click.echo(f"🔄 Preprocessing {dataset} dataset(s)...")
+    click.echo(f"Preprocessing {dataset} dataset(s)...")
     
     loader = DataLoader()
     datasets_to_process = ['fraud', 'creditcard'] if dataset == 'both' else [dataset]
@@ -73,12 +69,12 @@ def preprocess(dataset, force):
             # Save processed data
             loader.save_processed_data(df_processed, ds_type)
             
-            click.echo(f"✅ {ds_type.upper()} preprocessing complete!")
+            click.echo(f"{ds_type.upper()} preprocessing complete!")
             click.echo(f"   Samples: {len(df_processed)}")
             click.echo(f"   Features: {len(df_processed.columns) - 1}")
             
         except Exception as e:
-            click.echo(f"❌ Error processing {ds_type}: {str(e)}", err=True)
+            click.echo(f"Error processing {ds_type}: {str(e)}", err=True)
             logger.error(f"Preprocessing error for {ds_type}: {str(e)}")
 
 
@@ -102,7 +98,7 @@ def preprocess(dataset, force):
 )
 def train(dataset, models, no_smote):
     """Train fraud detection models."""
-    click.echo(f"🚀 Training models on {dataset} dataset(s)...")
+    click.echo(f"Training models on {dataset} dataset(s)...")
     
     # Determine models to train
     if models == 'all':
@@ -165,11 +161,11 @@ def train(dataset, models, no_smote):
                 }
                 json.dump(serializable_results, f, indent=2)
             
-            click.echo(f"\n✅ Training complete for {ds_type}!")
+            click.echo(f"\nTraining complete for {ds_type}!")
             click.echo(f"   Results saved to: {results_file}")
             
         except Exception as e:
-            click.echo(f"❌ Error training {ds_type}: {str(e)}", err=True)
+            click.echo(f"Error training {ds_type}: {str(e)}", err=True)
             logger.error(f"Training error for {ds_type}: {str(e)}")
 
 
@@ -205,7 +201,7 @@ def train(dataset, models, no_smote):
 )
 def predict(model_type, dataset, input_file, output_file, threshold):
     """Make predictions on new data."""
-    click.echo(f"🔮 Making predictions with {model_type} on {dataset} data...")
+    click.echo(f"Making predictions with {model_type} on {dataset} data...")
     
     try:
         # Load predictor
@@ -232,7 +228,7 @@ def predict(model_type, dataset, input_file, output_file, threshold):
         fraud_count = results['is_fraud'].sum()
         fraud_pct = (fraud_count / len(results)) * 100
         
-        click.echo(f"\n✅ Predictions complete!")
+        click.echo(f"\nPredictions complete!")
         click.echo(f"   Total transactions: {len(results)}")
         click.echo(f"   Fraud detected: {fraud_count} ({fraud_pct:.2f}%)")
         click.echo(f"   Results saved to: {output_file}")
@@ -245,7 +241,7 @@ def predict(model_type, dataset, input_file, output_file, threshold):
                 click.echo(f"     {level}: {count}")
         
     except Exception as e:
-        click.echo(f"❌ Error making predictions: {str(e)}", err=True)
+        click.echo(f"Error making predictions: {str(e)}", err=True)
         logger.error(f"Prediction error: {str(e)}")
 
 
@@ -258,7 +254,7 @@ def predict(model_type, dataset, input_file, output_file, threshold):
 )
 def evaluate(dataset):
     """Evaluate trained models on test data."""
-    click.echo(f"📊 Evaluating models on {dataset} dataset(s)...")
+    click.echo(f"Evaluating models on {dataset} dataset(s)...")
     
     datasets_to_eval = ['fraud', 'creditcard'] if dataset == 'both' else [dataset]
     
@@ -295,14 +291,14 @@ def evaluate(dataset):
                     continue
             
         except Exception as e:
-            click.echo(f"❌ Error evaluating {ds_type}: {str(e)}", err=True)
+            click.echo(f"Error evaluating {ds_type}: {str(e)}", err=True)
             logger.error(f"Evaluation error for {ds_type}: {str(e)}")
 
 
 @cli.command()
 def info():
     """Display system information and configuration."""
-    click.echo("🛡️  Fraud Detection System Information\n")
+    click.echo("Fraud Detection System Information\n")
     
     click.echo("Configuration:")
     click.echo(f"  Data directory: {data_config.fraud_data_path.parent}")

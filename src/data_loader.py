@@ -1,6 +1,3 @@
-"""
-Data loading utilities for fraud detection system.
-"""
 import pandas as pd
 from pathlib import Path
 from typing import Tuple, Optional
@@ -16,28 +13,9 @@ class DataLoader:
     """Handles loading and basic validation of datasets."""
     
     def __init__(self, config=None):
-        """
-        Initialize DataLoader.
-        
-        Args:
-            config: DataConfig instance (uses default if None)
-        """
         self.config = config or data_config
         
     def load_fraud_data(self, file_path: Optional[Path] = None) -> pd.DataFrame:
-        """
-        Load fraud detection dataset.
-        
-        Args:
-            file_path: Path to fraud data file (uses config default if None)
-        
-        Returns:
-            DataFrame containing fraud data
-        
-        Raises:
-            FileNotFoundError: If data file doesn't exist
-            pd.errors.EmptyDataError: If file is empty
-        """
         path = file_path or self.config.fraud_data_path
         
         try:
@@ -61,19 +39,6 @@ class DataLoader:
             raise
     
     def load_creditcard_data(self, file_path: Optional[Path] = None) -> pd.DataFrame:
-        """
-        Load credit card transaction dataset.
-        
-        Args:
-            file_path: Path to credit card data file (uses config default if None)
-        
-        Returns:
-            DataFrame containing credit card data
-        
-        Raises:
-            FileNotFoundError: If data file doesn't exist
-            pd.errors.EmptyDataError: If file is empty
-        """
         path = file_path or self.config.creditcard_data_path
         
         try:
@@ -97,18 +62,6 @@ class DataLoader:
             raise
     
     def load_ip_to_country(self, file_path: Optional[Path] = None) -> pd.DataFrame:
-        """
-        Load IP to country mapping dataset.
-        
-        Args:
-            file_path: Path to IP mapping file (uses config default if None)
-        
-        Returns:
-            DataFrame containing IP to country mappings
-        
-        Raises:
-            FileNotFoundError: If data file doesn't exist
-        """
         path = file_path or self.config.ip_to_country_path
         
         try:
@@ -130,14 +83,6 @@ class DataLoader:
         dataset_type: str,
         file_path: Optional[Path] = None
     ) -> None:
-        """
-        Save processed dataframe to CSV.
-        
-        Args:
-            df: DataFrame to save
-            dataset_type: Type of dataset ('fraud' or 'creditcard')
-            file_path: Custom save path (uses config default if None)
-        """
         if dataset_type == "fraud":
             path = file_path or self.config.fraud_processed_path
         elif dataset_type == "creditcard":
@@ -155,15 +100,6 @@ class DataLoader:
             raise
     
     def load_processed_data(self, dataset_type: str) -> pd.DataFrame:
-        """
-        Load processed dataset.
-        
-        Args:
-            dataset_type: Type of dataset ('fraud' or 'creditcard')
-        
-        Returns:
-            Processed DataFrame
-        """
         if dataset_type == "fraud":
             path = self.config.fraud_processed_path
         elif dataset_type == "creditcard":
@@ -182,16 +118,6 @@ class DataLoader:
             raise
     
     def _validate_dataframe(self, df: pd.DataFrame, dataset_type: str) -> None:
-        """
-        Validate basic properties of loaded dataframe.
-        
-        Args:
-            df: DataFrame to validate
-            dataset_type: Type of dataset for validation
-        
-        Raises:
-            ValueError: If validation fails
-        """
         if df.empty:
             raise ValueError(f"{dataset_type} dataset is empty")
         
@@ -223,15 +149,6 @@ class DataLoader:
 def load_train_test_split(
     dataset_type: str
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
-    """
-    Load processed data and split into train/test sets.
-    
-    Args:
-        dataset_type: Type of dataset ('fraud' or 'creditcard')
-    
-    Returns:
-        Tuple of (X_train, X_test, y_train, y_test)
-    """
     from sklearn.model_selection import train_test_split
     
     loader = DataLoader()

@@ -1,6 +1,3 @@
-"""
-Prediction utilities for fraud detection.
-"""
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Optional, Union

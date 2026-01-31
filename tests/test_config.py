@@ -37,20 +37,17 @@ class TestModelConfig:
     """Tests for ModelConfig."""
     
     def test_model_types(self):
-        """Test available model types."""
         config = ModelConfig()
         expected_types = ["logistic_regression", "random_forest", "xgboost"]
         assert config.model_types == expected_types
     
     def test_rf_params(self):
-        """Test Random Forest parameters."""
         config = ModelConfig()
         assert "n_estimators" in config.rf_params
         assert "random_state" in config.rf_params
         assert config.rf_params["random_state"] == 42
     
     def test_smote_config(self):
-        """Test SMOTE configuration."""
         config = ModelConfig()
         assert config.use_smote is True
         assert 0 < config.smote_sampling_strategy <= 1
@@ -60,12 +57,10 @@ class TestLoggingConfig:
     """Tests for LoggingConfig."""
     
     def test_log_level(self):
-        """Test default log level."""
         config = LoggingConfig()
         assert config.log_level == "INFO"
     
     def test_log_format(self):
-        """Test log format contains required fields."""
         config = LoggingConfig()
         assert "%(asctime)s" in config.log_format
         assert "%(levelname)s" in config.log_format
@@ -75,13 +70,11 @@ class TestAPIConfig:
     """Tests for APIConfig."""
     
     def test_default_host_port(self):
-        """Test default host and port."""
         config = APIConfig()
         assert config.host == "0.0.0.0"
         assert config.port == 8000
     
     def test_api_metadata(self):
-        """Test API metadata."""
         config = APIConfig()
         assert config.title == "Fraud Detection API"
         assert config.version == "1.0.0"
@@ -102,17 +95,13 @@ class TestConfigInstances:
     """Tests for config instances."""
     
     def test_data_config_instance(self):
-        """Test data_config instance."""
         assert isinstance(data_config, DataConfig)
     
     def test_model_config_instance(self):
-        """Test model_config instance."""
         assert isinstance(model_config, ModelConfig)
     
     def test_logging_config_instance(self):
-        """Test logging_config instance."""
         assert isinstance(logging_config, LoggingConfig)
     
     def test_api_config_instance(self):
-        """Test api_config instance."""
         assert isinstance(api_config, APIConfig)

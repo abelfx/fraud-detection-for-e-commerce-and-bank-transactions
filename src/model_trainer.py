@@ -1,6 +1,3 @@
-"""
-Model training utilities for fraud detection.
-"""
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Optional, Tuple
@@ -23,10 +20,6 @@ class ModelTrainer:
     def __init__(self, model_type: str = "random_forest"):
         """
         Initialize model trainer.
-        
-        Args:
-            model_type: Type of model to train
-                       ('logistic_regression', 'random_forest', 'xgboost')
         """
         self.model_type = model_type
         self.model = None
@@ -60,14 +53,6 @@ class ModelTrainer:
     ) -> Dict[str, float]:
         """
         Train the model.
-        
-        Args:
-            X_train: Training features
-            y_train: Training target
-            validate: Whether to perform cross-validation
-        
-        Returns:
-            Dictionary with training metrics
         """
         logger.info(f"Training {self.model_type} model on {len(X_train)} samples")
         
@@ -100,13 +85,6 @@ class ModelTrainer:
     ) -> Dict[str, float]:
         """
         Perform cross-validation.
-        
-        Args:
-            X: Features
-            y: Target
-        
-        Returns:
-            Dictionary with CV metrics
         """
         logger.info(f"Performing {model_config.cv_folds}-fold cross-validation")
         
@@ -134,15 +112,6 @@ class ModelTrainer:
     def predict(self, X: pd.DataFrame) -> np.ndarray:
         """
         Make predictions.
-        
-        Args:
-            X: Features to predict
-        
-        Returns:
-            Array of predictions
-        
-        Raises:
-            RuntimeError: If model not trained
         """
         if not self.is_trained:
             raise RuntimeError("Model must be trained before prediction")
@@ -152,15 +121,6 @@ class ModelTrainer:
     def predict_proba(self, X: pd.DataFrame) -> np.ndarray:
         """
         Get prediction probabilities.
-        
-        Args:
-            X: Features to predict
-        
-        Returns:
-            Array of prediction probabilities
-        
-        Raises:
-            RuntimeError: If model not trained
         """
         if not self.is_trained:
             raise RuntimeError("Model must be trained before prediction")
@@ -170,9 +130,6 @@ class ModelTrainer:
     def get_feature_importance(self) -> Optional[pd.DataFrame]:
         """
         Get feature importance scores.
-        
-        Returns:
-            DataFrame with feature importance or None if not available
         """
         if not self.is_trained:
             raise RuntimeError("Model must be trained first")
@@ -200,16 +157,6 @@ class ModelTrainer:
     ) -> Path:
         """
         Save trained model to disk.
-        
-        Args:
-            filepath: Custom save path (uses config default if None)
-            dataset_name: Name identifier for the model
-        
-        Returns:
-            Path where model was saved
-        
-        Raises:
-            RuntimeError: If model not trained
         """
         if not self.is_trained:
             raise RuntimeError("Model must be trained before saving")
@@ -236,12 +183,6 @@ class ModelTrainer:
     def load_model(self, filepath: Path) -> None:
         """
         Load trained model from disk.
-        
-        Args:
-            filepath: Path to saved model
-        
-        Raises:
-            FileNotFoundError: If model file doesn't exist
         """
         logger.info(f"Loading model from {filepath}")
         
@@ -266,15 +207,6 @@ def train_all_models(
 ) -> Dict[str, ModelTrainer]:
     """
     Train multiple models on the same dataset.
-    
-    Args:
-        X_train: Training features
-        y_train: Training target
-        dataset_name: Name identifier for saving models
-        model_types: List of model types to train (uses config default if None)
-    
-    Returns:
-        Dictionary mapping model type to trained ModelTrainer
     """
     if model_types is None:
         model_types = model_config.model_types

@@ -1,6 +1,3 @@
-"""
-Logging utilities for the fraud detection system.
-"""
 import logging
 import sys
 from pathlib import Path
@@ -16,14 +13,6 @@ def setup_logger(
 ) -> logging.Logger:
     """
     Set up a logger with file and console handlers.
-    
-    Args:
-        name: Name of the logger
-        log_file: Optional log file name (will be saved in logs directory)
-        level: Logging level (defaults to config)
-    
-    Returns:
-        Configured logger instance
     """
     logger = logging.getLogger(name)
     

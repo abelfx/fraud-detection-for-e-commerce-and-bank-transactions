@@ -1,6 +1,3 @@
-"""
-Configuration management for fraud detection system.
-"""
 from pathlib import Path
 from typing import Dict, List, Optional
 from dataclasses import dataclass, field
@@ -34,10 +31,9 @@ class DataConfig:
     creditcard_processed_path: Path = PROCESSED_DATA_DIR / "creditcard_processed.csv"
     
     # Feature columns to drop
-    # These must match what the notebook pipeline drops to ensure model compatibility
     fraud_drop_columns: List[str] = field(default_factory=lambda: [
         "user_id", "signup_time", "purchase_time", "device_id", "country",
-        "ip_address", "browser_source", "ip_country"  # Added for notebook compatibility
+        "ip_address", "browser_source", "ip_country"  
     ])
     creditcard_drop_columns: List[str] = field(default_factory=lambda: [
         "Time", "Amount"

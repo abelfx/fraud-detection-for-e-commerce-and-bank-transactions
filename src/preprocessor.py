@@ -1,6 +1,3 @@
-"""
-Data preprocessing utilities for fraud detection.
-"""
 import pandas as pd
 import numpy as np
 from typing import Tuple, Optional
@@ -19,9 +16,6 @@ class DataPreprocessor:
     def __init__(self, use_smote: bool = None):
         """
         Initialize preprocessor.
-        
-        Args:
-            use_smote: Whether to use SMOTE for class balancing
         """
         self.use_smote = use_smote if use_smote is not None else model_config.use_smote
         self.scaler = StandardScaler()
@@ -41,13 +35,6 @@ class DataPreprocessor:
     ) -> Tuple[pd.DataFrame, pd.Series]:
         """
         Fit preprocessor and transform training data.
-        
-        Args:
-            X: Training features
-            y: Training target
-        
-        Returns:
-            Tuple of (transformed X, transformed y)
         """
         logger.info("Fitting and transforming training data")
         
@@ -69,15 +56,6 @@ class DataPreprocessor:
     def transform(self, X: pd.DataFrame) -> pd.DataFrame:
         """
         Transform test/new data using fitted preprocessor.
-        
-        Args:
-            X: Features to transform
-        
-        Returns:
-            Transformed features
-        
-        Raises:
-            RuntimeError: If preprocessor not fitted
         """
         if not self.fitted:
             raise RuntimeError("Preprocessor must be fitted before transform")
@@ -124,13 +102,6 @@ class DataPreprocessor:
     def _scale_features(self, X: pd.DataFrame, fit: bool) -> pd.DataFrame:
         """
         Scale numerical features.
-        
-        Args:
-            X: Input features
-            fit: Whether to fit the scaler
-        
-        Returns:
-            Scaled features
         """
         X = X.copy()
         
@@ -158,13 +129,6 @@ class DataPreprocessor:
     ) -> Tuple[pd.DataFrame, pd.Series]:
         """
         Apply SMOTE to balance classes.
-        
-        Args:
-            X: Features
-            y: Target
-        
-        Returns:
-            Tuple of (balanced X, balanced y)
         """
         original_counts = y.value_counts().to_dict()
         logger.info(f"Original class distribution: {original_counts}")
@@ -181,12 +145,6 @@ class DataPreprocessor:
         return X_balanced, y_balanced
     
     def get_feature_names(self) -> list:
-        """
-        Get feature names after preprocessing.
-        
-        Returns:
-            List of feature names
-        """
         if not self.fitted:
             raise RuntimeError("Preprocessor must be fitted first")
         
@@ -201,15 +159,6 @@ def preprocess_pipeline(
 ) -> Tuple[pd.DataFrame, pd.Series, pd.DataFrame]:
     """
     Complete preprocessing pipeline for train and test data.
-    
-    Args:
-        X_train: Training features
-        y_train: Training target
-        X_test: Test features
-        use_smote: Whether to use SMOTE
-    
-    Returns:
-        Tuple of (X_train_processed, y_train_processed, X_test_processed)
     """
     preprocessor = DataPreprocessor(use_smote=use_smote)
     

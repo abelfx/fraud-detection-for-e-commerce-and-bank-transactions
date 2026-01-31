@@ -1,6 +1,3 @@
-"""
-Unit tests for model trainer module.
-"""
 import pytest
 import pandas as pd
 import numpy as np

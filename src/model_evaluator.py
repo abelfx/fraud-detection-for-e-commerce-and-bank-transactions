@@ -1,6 +1,3 @@
-"""
-Model evaluation utilities for fraud detection.
-"""
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, Optional, Tuple
@@ -21,12 +18,6 @@ class ModelEvaluator:
     """Handles evaluation and scoring of fraud detection models."""
     
     def __init__(self, threshold: float = 0.5):
-        """
-        Initialize evaluator.
-        
-        Args:
-            threshold: Classification threshold for predictions
-        """
         self.threshold = threshold
     
     def evaluate(
@@ -37,14 +28,6 @@ class ModelEvaluator:
     ) -> Dict[str, Any]:
         """
         Comprehensive evaluation of model predictions.
-        
-        Args:
-            y_true: True labels
-            y_pred_proba: Predicted probabilities (for positive class)
-            y_pred: Predicted classes (computed if None)
-        
-        Returns:
-            Dictionary with evaluation metrics
         """
         logger.info("Evaluating model performance")
         
@@ -96,14 +79,6 @@ class ModelEvaluator:
     ) -> Tuple[float, Dict[str, float]]:
         """
         Find optimal classification threshold.
-        
-        Args:
-            y_true: True labels
-            y_pred_proba: Predicted probabilities
-            metric: Metric to optimize ('f1', 'precision', 'recall')
-        
-        Returns:
-            Tuple of (optimal_threshold, metrics_at_threshold)
         """
         logger.info(f"Finding optimal threshold based on {metric}")
         
@@ -154,14 +129,6 @@ class ModelEvaluator:
     ) -> str:
         """
         Generate detailed classification report.
-        
-        Args:
-            y_true: True labels
-            y_pred: Predicted labels
-            target_names: Names for classes
-        
-        Returns:
-            Classification report as string
         """
         if target_names is None:
             target_names = ['Normal', 'Fraud']
@@ -185,12 +152,6 @@ class ModelEvaluator:
     ):
         """
         Plot confusion matrix.
-        
-        Args:
-            y_true: True labels
-            y_pred: Predicted labels
-            save_path: Path to save plot (displays if None)
-            normalize: Whether to normalize the matrix
         """
         cm = confusion_matrix(y_true, y_pred)
         
@@ -226,11 +187,6 @@ class ModelEvaluator:
     ):
         """
         Plot ROC curve.
-        
-        Args:
-            y_true: True labels
-            y_pred_proba: Predicted probabilities
-            save_path: Path to save plot (displays if None)
         """
         fpr, tpr, thresholds = roc_curve(y_true, y_pred_proba[:, 1])
         auc_score = roc_auc_score(y_true, y_pred_proba[:, 1])
@@ -260,11 +216,6 @@ class ModelEvaluator:
     ):
         """
         Plot Precision-Recall curve.
-        
-        Args:
-            y_true: True labels
-            y_pred_proba: Predicted probabilities
-            save_path: Path to save plot (displays if None)
         """
         precision, recall, thresholds = precision_recall_curve(
             y_true, y_pred_proba[:, 1]
@@ -294,10 +245,6 @@ class ModelEvaluator:
     ):
         """
         Create comparison plot for multiple models.
-        
-        Args:
-            results: Dictionary mapping model names to their metrics
-            save_path: Path to save plot
         """
         metrics_to_compare = ['accuracy', 'precision', 'recall', 'f1_score', 'roc_auc']
         
@@ -345,15 +292,6 @@ def evaluate_model(
 ) -> Dict[str, Any]:
     """
     Convenience function to evaluate a trained model.
-    
-    Args:
-        model_trainer: Trained ModelTrainer instance
-        X_test: Test features
-        y_test: Test labels
-        optimize_threshold: Whether to find optimal threshold
-    
-    Returns:
-        Dictionary with evaluation results
     """
     evaluator = ModelEvaluator()
     

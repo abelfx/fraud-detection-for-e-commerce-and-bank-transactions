@@ -1,6 +1,3 @@
-"""
-Feature engineering utilities for fraud detection.
-"""
 import pandas as pd
 import numpy as np
 from typing import List, Optional
@@ -20,16 +17,6 @@ class FraudDataFeatureEngineer:
         self.fitted = False
     
     def engineer_features(self, df: pd.DataFrame, fit: bool = True) -> pd.DataFrame:
-        """
-        Create features from fraud data.
-        
-        Args:
-            df: Input DataFrame
-            fit: Whether to fit scalers (True for training data)
-        
-        Returns:
-            DataFrame with engineered features
-        """
         df = df.copy()
         
         logger.info("Engineering features for fraud data")
@@ -104,12 +91,6 @@ class FraudDataFeatureEngineer:
     def _ip_to_int(ip_str: str) -> int:
         """
         Convert IP address string to integer.
-        
-        Args:
-            ip_str: IP address as string (e.g., '192.168.1.1')
-        
-        Returns:
-            IP as integer
         """
         try:
             parts = ip_str.split('.')
@@ -129,16 +110,6 @@ class CreditCardFeatureEngineer:
         self.fitted = False
     
     def engineer_features(self, df: pd.DataFrame, fit: bool = True) -> pd.DataFrame:
-        """
-        Create features from credit card data.
-        
-        Args:
-            df: Input DataFrame
-            fit: Whether to fit scalers (True for training data)
-        
-        Returns:
-            DataFrame with engineered features
-        """
         df = df.copy()
         
         logger.info("Engineering features for credit card data")
@@ -203,15 +174,6 @@ def prepare_features(
 ) -> pd.DataFrame:
     """
     Apply feature engineering based on dataset type.
-    
-    Args:
-        df: Input DataFrame
-        dataset_type: Type of dataset ('fraud' or 'creditcard')
-        drop_columns: Columns to drop after engineering
-        fit: Whether to fit transformers
-    
-    Returns:
-        DataFrame with engineered features
     """
     if dataset_type == "fraud":
         engineer = FraudDataFeatureEngineer()
