@@ -73,11 +73,4 @@ Place Fraud_Data.csv, IpAddress_to_Country.csv, and creditcard.csv inside the da
 - Extracting Global Importance to identify overall fraud drivers.
 - Generating SHAP Force Plots for individual transaction verification (True Positives vs. False Positives).
 
-# 📈 Deliverables & Key Dates
-- Interim-1 (Dec 21, 2025): EDA, Feature Engineering, and IP Mapping.
-- Interim-2 (Dec 28, 2025): Model training and initial evaluation.
-- Final Submission (Dec 30, 2025): SHAP analysis and Business Recommendations.
 
-## 🤝 Acknowledgements
-- Company: Adey Innovations Inc.
-- Tutors: Kerod, Mahbubah, Filimon, Smegnsh.
