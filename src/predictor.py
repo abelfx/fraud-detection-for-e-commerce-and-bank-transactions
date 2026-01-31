@@ -134,6 +134,92 @@ class FraudPredictor:
         
         return prediction_result
     
+    def find_optimal_threshold(
+        self,
+        X: pd.DataFrame,
+        y_true: pd.Series,
+        metric: str = 'f1',
+        min_recall: Optional[float] = None
+    ) -> Dict[str, Any]:
+        """
+        Find optimal classification threshold for fraud detection.
+        
+        Args:
+            X: Features
+            y_true: True labels
+            metric: Metric to optimize ('f1', 'recall', 'precision')
+            min_recall: Minimum recall constraint (e.g., 0.8 for at least 80% recall)
+        
+        Returns:
+            Dictionary with optimal threshold and performance metrics
+        """
+        from sklearn.metrics import precision_recall_curve
+        
+        if self.model_trainer is None:
+            raise RuntimeError("No model loaded. Call load_model() first.")
+        
+        logger.info(f"Finding optimal threshold based on {metric}")
+        
+        # Get prediction probabilities
+        y_pred_proba = self.model_trainer.predict_proba(X)
+        
+        # Calculate precision-recall curve
+        precisions, recalls, thresholds = precision_recall_curve(
+            y_true, y_pred_proba[:, 1]
+        )
+        
+        # Calculate F1 scores
+        f1_scores = 2 * (precisions * recalls) / (precisions + recalls + 1e-10)
+        
+        # Find optimal threshold based on metric with constraints
+        if metric == 'f1':
+            if min_recall is not None:
+                # Find best F1 while maintaining minimum recall
+                valid_indices = recalls >= min_recall
+                if valid_indices.any():
+                    valid_f1 = np.where(valid_indices, f1_scores, -np.inf)
+                    optimal_idx = np.argmax(valid_f1)
+                    logger.info(f"Optimizing F1 with min_recall >= {min_recall}")
+                else:
+                    logger.warning(f"No threshold achieves min_recall={min_recall}, using best F1")
+                    optimal_idx = np.argmax(f1_scores)
+            else:
+                optimal_idx = np.argmax(f1_scores)
+        elif metric == 'recall':
+            optimal_idx = np.argmax(recalls)
+        elif metric == 'precision':
+            optimal_idx = np.argmax(precisions)
+        else:
+            raise ValueError(f"Unknown metric: {metric}")
+        
+        # Get threshold (handling edge case)
+        if optimal_idx < len(thresholds):
+            optimal_threshold = float(thresholds[optimal_idx])
+        else:
+            optimal_threshold = float(thresholds[-1])
+        
+        # Evaluate at optimal threshold
+        y_pred_optimal = (y_pred_proba[:, 1] >= optimal_threshold).astype(int)
+        
+        from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+        
+        result = {
+            'optimal_threshold': optimal_threshold,
+            'accuracy': float(accuracy_score(y_true, y_pred_optimal)),
+            'precision': float(precision_score(y_true, y_pred_optimal, zero_division=0)),
+            'recall': float(recall_score(y_true, y_pred_optimal, zero_division=0)),
+            'f1_score': float(f1_score(y_true, y_pred_optimal, zero_division=0)),
+            'optimization_metric': metric
+        }
+        
+        logger.info(f"Optimal threshold: {optimal_threshold:.4f}")
+        logger.info(f"Metrics at optimal threshold:")
+        logger.info(f"  Precision: {result['precision']:.4f}")
+        logger.info(f"  Recall: {result['recall']:.4f}")
+        logger.info(f"  F1 Score: {result['f1_score']:.4f}")
+        
+        return result
+    
     def predict_batch(
         self,
         transactions: pd.DataFrame,

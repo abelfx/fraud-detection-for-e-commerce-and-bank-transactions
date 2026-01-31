@@ -65,7 +65,7 @@ class ModelEvaluator:
         logger.info(f"Recall:             {metrics['recall']:.4f}")
         logger.info(f"F1 Score:           {metrics['f1_score']:.4f}")
         logger.info(f"ROC AUC:            {metrics['roc_auc']:.4f}")
-        logger.info(f"Average Precision:  {metrics['average_precision']:.4f}")
+        logger.info(f"AUPRC (AP):         {metrics['average_precision']:.4f} *** PRIMARY METRIC FOR IMBALANCED DATA ***")
         logger.info(f"Specificity:        {metrics['specificity']:.4f}")
         logger.info("="*60 + "\n")
         
@@ -203,6 +203,54 @@ class ModelEvaluator:
         if save_path:
             plt.savefig(save_path, dpi=300, bbox_inches='tight')
             logger.info(f"ROC curve saved to {save_path}")
+        else:
+            plt.show()
+        
+        plt.close()
+    
+    def plot_roc_and_pr_curves(
+        self,
+        y_true: pd.Series,
+        y_pred_proba: np.ndarray,
+        save_path: Optional[str] = None
+    ):
+        """
+        Plot both ROC and Precision-Recall curves side by side.
+        Emphasizes AUPRC as the primary metric for imbalanced data.
+        """
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+        
+        # ROC Curve
+        fpr, tpr, _ = roc_curve(y_true, y_pred_proba[:, 1])
+        roc_auc = roc_auc_score(y_true, y_pred_proba[:, 1])
+        
+        ax1.plot(fpr, tpr, label=f'ROC Curve (AUC = {roc_auc:.4f})', linewidth=2, color='blue')
+        ax1.plot([0, 1], [0, 1], 'k--', label='Random Classifier')
+        ax1.set_xlabel('False Positive Rate', fontsize=11)
+        ax1.set_ylabel('True Positive Rate', fontsize=11)
+        ax1.set_title('ROC Curve', fontsize=13, fontweight='bold')
+        ax1.legend(fontsize=10)
+        ax1.grid(alpha=0.3)
+        
+        # Precision-Recall Curve
+        precision, recall, thresholds = precision_recall_curve(y_true, y_pred_proba[:, 1])
+        ap_score = average_precision_score(y_true, y_pred_proba[:, 1])
+        baseline = y_true.sum() / len(y_true)
+        
+        ax2.plot(recall, precision, label=f'PR Curve (AUPRC = {ap_score:.4f})', linewidth=2, color='red')
+        ax2.axhline(y=baseline, color='k', linestyle='--', label=f'Baseline (Random) = {baseline:.4f}')
+        ax2.set_xlabel('Recall', fontsize=11)
+        ax2.set_ylabel('Precision', fontsize=11)
+        ax2.set_title('Precision-Recall Curve\\n*** PRIMARY METRIC for Imbalanced Data ***', 
+                      fontsize=13, fontweight='bold')
+        ax2.legend(fontsize=10)
+        ax2.grid(alpha=0.3)
+        
+        plt.tight_layout()
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+            logger.info(f"ROC and PR curves saved to {save_path}")
         else:
             plt.show()
         

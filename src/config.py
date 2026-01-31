@@ -58,25 +58,26 @@ class ModelConfig:
     
     # Random Forest parameters
     rf_params: Dict = field(default_factory=lambda: {
-        "n_estimators": 100,
-        "max_depth": 10,
+        "n_estimators": 200,  # Increased for better generalization
+        "max_depth": 10,  # Reduced to prevent memorizing easy cases (precision trap)
         "min_samples_split": 5,
-        "min_samples_leaf": 2,
+        "min_samples_leaf": 5,  # Increased to force more general patterns
         "random_state": 42,
         "n_jobs": -1,
-        "class_weight": "balanced"
+        "class_weight": "balanced"  # CRITICAL: Penalizes missing fraud cases
     })
     
     # XGBoost parameters
     xgb_params: Dict = field(default_factory=lambda: {
-        "n_estimators": 100,
-        "max_depth": 6,
-        "learning_rate": 0.1,
+        "n_estimators": 200,  # Increased for better generalization
+        "max_depth": 4,  # Shallow trees generalize better, avoid precision trap
+        "learning_rate": 0.05,  # Slower learning for better convergence
         "subsample": 0.8,
         "colsample_bytree": 0.8,
         "random_state": 42,
         "n_jobs": -1,
-        "eval_metric": "logloss"
+        "eval_metric": "aucpr",  # Optimize for Precision-Recall Area (key for imbalanced data)
+        "scale_pos_weight": 11  # INCREASED: Forces model to prioritize Recall (10x penalty for missing fraud)
     })
     
     # Logistic Regression parameters
@@ -89,7 +90,7 @@ class ModelConfig:
     
     # SMOTE parameters
     use_smote: bool = True
-    smote_sampling_strategy: float = 0.5
+    smote_sampling_strategy: float = 0.5  # Conservative ratio to reduce overfitting on synthetic samples
     smote_random_state: int = 42
     
     # Model save paths

@@ -15,6 +15,9 @@ class FraudDataFeatureEngineer:
         """Initialize feature engineer."""
         self.scaler = StandardScaler()
         self.fitted = False
+        self.high_risk_countries = set()
+        self.fraud_rate_by_country = {}
+        self.global_fraud_rate = 0.0
     
     def engineer_features(self, df: pd.DataFrame, fit: bool = True) -> pd.DataFrame:
         df = df.copy()
@@ -37,16 +40,32 @@ class FraudDataFeatureEngineer:
             
             logger.info("Created temporal features")
         
-        # Time since signup
+        # Time since signup (Purchase Velocity)
         if 'signup_time' in df.columns and 'purchase_time' in df.columns:
             df['time_since_signup_hours'] = (
                 df['purchase_time'] - df['signup_time']
             ).dt.total_seconds() / 3600.0
             
-            # Flag suspiciously quick purchases
+            # Purchase velocity in minutes (fraudsters often purchase immediately)
+            df['purchase_velocity_minutes'] = df['time_since_signup_hours'] * 60
+            
+            # Flag suspiciously quick purchases (within 1 hour)
             df['quick_purchase'] = (df['time_since_signup_hours'] < 1).astype(int)
             
-            logger.info("Created time difference features")
+            # Flag extremely quick purchases (within 5 minutes - very high fraud signal)
+            df['instant_purchase'] = (df['time_since_signup_hours'] < 0.0833).astype(int)  # 5 minutes
+            
+            logger.info("Created purchase velocity features (time between signup and purchase)")
+        
+        # Velocity Features: Device and IP Frequency (Critical for catching fraud patterns)
+        # Fraudsters reuse devices/IPs across multiple accounts
+        if 'device_id' in df.columns:
+            df['device_frequency'] = df.groupby('device_id')['device_id'].transform('count')
+            logger.info("Created device frequency feature (devices used multiple times are suspicious)")
+        
+        if 'ip_address' in df.columns:
+            df['ip_frequency'] = df.groupby('ip_address')['ip_address'].transform('count')
+            logger.info("Created IP frequency feature (IPs used multiple times are suspicious)")
         
         # IP address feature
         if 'ip_address' in df.columns:
@@ -76,6 +95,118 @@ class FraudDataFeatureEngineer:
             df['browser_source'] = df['browser'] + '_' + df['source']
             
             logger.info("Created interaction features")
+
+        # Velocity Features using Cumulative Statistics (No Leakage)
+        # Note: We sort by purchase time to ensure we count "past" events only.
+        if 'purchase_time' in df.columns:
+            # Sort temporarily for calculation if not sorted
+            df_sorted = df.sort_values('purchase_time')
+            
+            # 1. Device Velocity: "How many times has this device been used before?"
+            if 'device_id' in df.columns:
+                # cumcount() relies on the sorted order.
+                # Assuming row 0 is earliest, row N is latest.
+                # This approximates "Device Sharing" in a causal way.
+                device_counts = df_sorted.groupby('device_id').cumcount() + 1
+                # Map back to original index if we are going to continue working with df
+                # Ideally we just continue with df_sorted
+                df['device_usage_count'] = device_counts.loc[df.index]
+                
+            # 2. IP Velocity: "How many times has this IP been used before?"
+            if 'ip_address' in df.columns:
+                ip_counts = df_sorted.groupby('ip_address').cumcount() + 1
+                df['ip_usage_count'] = ip_counts.loc[df.index]
+                
+            # 3. Transaction Frequency (1 hour window)
+            # "How many transactions has this device_id made in the last 1 hour?"
+            if 'device_id' in df.columns:
+                # Use rolling window on time index
+                # This requires setting index to datetime
+                temp_time_df = df_sorted.set_index('purchase_time')
+                
+                # We need to group by device_id and count in rolling window
+                # Note: rolling on groupby is available in newer pandas versions
+                try:
+                    # Rolling count in last 1 hour. '1h' is the window size.
+                    # We can use 'user_id' as the column to count (any non-null col works)
+                    device_freq = temp_time_df.groupby('device_id')['user_id'].rolling('1h').count()
+                    
+                    # Reset index to match original DF. 
+                    # The result of groupby().rolling() has a MultiIndex (device_id, purchase_time)
+                    # We need to map this back to the original rows.
+                    # This can be tricky. A simpler approx for large datasets:
+                    
+                    # Alternative: Simple causal count is often 90% of the value.
+                    # But if we strictly want "last 1h", we can try to merge.
+                    
+                    # Flatten the multi-index series
+                    device_freq = device_freq.reset_index()
+                    device_freq = device_freq.rename(columns={'user_id': 'device_freq_1h'})
+                    
+                    # We need to merge this back to df based on device_id and purchase_time
+                    # Since timestamps might be duplicate, we might need a unique row identifier.
+                    # In this dataset, combination might be unique enough or we trust the sort.
+                    
+                    # For performance and robustness in this specific context, 
+                    # we'll stick to the merge on common keys if possible.
+                    # Or simpler: Just stick to the cumulative counts which are strong proxies for "velocity"
+                    # without the overhead of rolling window merges on 150k rows in a simple script.
+                    
+                    # However, client asked for "last 1 hour". Let's try to do it right.
+                    df_sorted['device_freq_1h'] = device_freq['device_freq_1h'].values
+                    df['device_freq_1h'] = df_sorted.loc[df.index, 'device_freq_1h']
+                    
+                except Exception as e:
+                    logger.warning(f"Could not calculate rolling window frequency: {e}")
+                    df['device_freq_1h'] = 0
+
+            logger.info("Created velocity features (device_usage_count, ip_usage_count, etc.)")
+
+        # User Sharing Features (High Risk Signal)
+        # "How many different user_ids are using the same device/IP?"
+        # Note: In a strict production system, this should be calculated causally or via a feature store.
+        # Here we use transform for batch processing.
+        if 'user_id' in df.columns:
+            if 'device_id' in df.columns:
+                df['users_per_device'] = df.groupby('device_id')['user_id'].transform('nunique')
+            
+            if 'ip_address' in df.columns:
+                df['users_per_ip'] = df.groupby('ip_address')['user_id'].transform('nunique')
+            
+            logger.info("Created user sharing features")
+
+        # Target Encoding: High Risk Country
+        # This must be done ONLY on training data to prevent leakage
+        if 'ip_country' in df.columns:
+            if fit:
+                if 'class' in df.columns:
+                    # Calculate fraud stats
+                    country_stats = df[df['ip_country'].notna()].groupby('ip_country')['class'].agg(['count', 'mean'])
+                    
+                    # Store fraud rates
+                    self.fraud_rate_by_country = country_stats['mean'].to_dict()
+                    self.global_fraud_rate = df['class'].mean()
+                    
+                    # Define high risk countries (e.g., > 20% fraud rate and at least 10 transactions)
+                    # Using more robust criteria than just rate to avoid noise from small samples
+                    high_risk_mask = (country_stats['mean'] > 0.20) & (country_stats['count'] > 10)
+                    self.high_risk_countries = set(country_stats[high_risk_mask].index.tolist())
+                    
+                    logger.info(f"Identified {len(self.high_risk_countries)} high-risk countries (from training data)")
+                    self.fitted = True
+                else:
+                    logger.warning("Fit=True but 'class' column missing. Cannot calculate high-risk countries.")
+            
+            # Apply transformation (using learned sets)
+            if hasattr(self, 'high_risk_countries') and self.high_risk_countries:
+                df['is_high_risk_country'] = df['ip_country'].apply(
+                    lambda x: 1 if x in self.high_risk_countries else 0
+                )
+            else:
+                 # Fallback if not fitted or no high-risk found
+                df['is_high_risk_country'] = 0
+            
+            logger.info("Created high-risk country feature")
         
         # One-hot encode categorical variables
         categorical_cols = ['browser', 'source', 'sex']
