@@ -509,3 +509,6 @@ class
 Name: count, dtype: int64
 2026-01-31 08:26:01,226 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
 2026-01-31 08:26:01,265 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
+2026-01-31 08:37:24,389 - src.data_loader - INFO - Loading credit card data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/creditcard.csv
+2026-01-31 08:37:25,630 - src.data_loader - INFO - Successfully loaded 284807 credit card records
+2026-01-31 08:37:25,631 - src.data_loader - WARNING - Target column 'class' not found in creditcard data

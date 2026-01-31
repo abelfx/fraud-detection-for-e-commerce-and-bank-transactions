@@ -820,3 +820,23 @@
 2026-01-31 08:26:24,885 - src.model_trainer - INFO - CV Accuracy: 0.9541 (+/- 0.0538)
 2026-01-31 08:27:28,532 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/ecommerce_random_forest_model.joblib
 2026-01-31 08:27:28,571 - src.model_trainer - INFO - Model saved successfully
+2026-01-31 08:38:00,474 - src.model_trainer - INFO - Initialized Logistic Regression model
+2026-01-31 08:38:00,474 - src.model_trainer - INFO - Training logistic_regression model on 341176 samples
+2026-01-31 08:38:03,863 - src.model_trainer - INFO - Model training complete
+2026-01-31 08:38:03,940 - src.model_trainer - INFO - Training accuracy: 0.9629
+2026-01-31 08:38:03,944 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-31 08:38:09,046 - src.model_trainer - INFO - CV Accuracy: 0.9627 (+/- 0.0004)
+2026-01-31 08:38:09,046 - src.model_trainer - INFO - Initialized Random Forest model
+2026-01-31 08:38:09,047 - src.model_trainer - INFO - Training random_forest model on 341176 samples
+2026-01-31 08:38:40,699 - src.model_trainer - INFO - Model training complete
+2026-01-31 08:38:41,111 - src.model_trainer - INFO - Training accuracy: 0.9951
+2026-01-31 08:38:41,112 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-31 08:40:38,861 - src.model_trainer - INFO - CV Accuracy: 0.9945 (+/- 0.0001)
+2026-01-31 08:40:38,862 - src.model_trainer - INFO - Initialized XGBoost model
+2026-01-31 08:40:38,863 - src.model_trainer - INFO - Training xgboost model on 341176 samples
+2026-01-31 08:40:41,177 - src.model_trainer - INFO - Model training complete
+2026-01-31 08:40:41,333 - src.model_trainer - INFO - Training accuracy: 0.9994
+2026-01-31 08:40:41,334 - src.model_trainer - INFO - Performing 5-fold cross-validation
+2026-01-31 08:40:49,987 - src.model_trainer - INFO - CV Accuracy: 0.9990 (+/- 0.0001)
+2026-01-31 08:44:30,132 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/creditcard_xgboost_model.joblib
+2026-01-31 08:44:30,138 - src.model_trainer - INFO - Model saved successfully

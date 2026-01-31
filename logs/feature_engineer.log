@@ -1414,3 +1414,15 @@
 2026-01-31 08:26:03,106 - src.feature_engineer - INFO - Created age group features
 2026-01-31 08:26:03,121 - src.feature_engineer - INFO - Created interaction features
 2026-01-31 08:26:03,195 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-01-31 08:37:40,257 - src.feature_engineer - INFO - Engineering features for credit card data
+2026-01-31 08:37:40,265 - src.feature_engineer - INFO - Created and scaled time features
+2026-01-31 08:37:40,275 - src.feature_engineer - INFO - Created and scaled amount features
+2026-01-31 08:37:40,280 - src.feature_engineer - INFO - Created interaction features
+2026-01-31 08:46:18,747 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-01-31 08:46:18,753 - src.feature_engineer - INFO - Created temporal features
+2026-01-31 08:46:18,755 - src.feature_engineer - INFO - Created time difference features
+2026-01-31 08:46:18,755 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-01-31 08:46:18,756 - src.feature_engineer - INFO - Created purchase value features
+2026-01-31 08:46:18,757 - src.feature_engineer - INFO - Created age group features
+2026-01-31 08:46:18,758 - src.feature_engineer - INFO - Created interaction features
+2026-01-31 08:46:18,760 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
