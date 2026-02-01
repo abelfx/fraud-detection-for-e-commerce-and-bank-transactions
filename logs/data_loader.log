@@ -640,3 +640,16 @@ Name: count, dtype: int64
 2026-02-01 10:07:13,865 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
 2026-02-01 10:07:17,771 - src.data_loader - INFO - Loading processed fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/fraud_data_processed.csv
 2026-02-01 10:07:18,000 - src.data_loader - INFO - Successfully loaded 151112 processed records
+2026-02-01 10:16:07,800 - src.data_loader - INFO - Loading fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/Fraud_Data.csv
+2026-02-01 10:16:08,016 - src.data_loader - INFO - Successfully loaded 151112 fraud records
+2026-02-01 10:16:08,019 - src.data_loader - INFO - fraud class distribution:
+class
+0    136961
+1     14151
+Name: count, dtype: int64
+2026-02-01 10:16:08,043 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
+2026-02-01 10:16:08,076 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
+2026-02-01 10:16:11,162 - src.data_loader - INFO - Loading processed fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/fraud_data_processed.csv
+2026-02-01 10:16:11,368 - src.data_loader - INFO - Successfully loaded 151112 processed records
+2026-02-01 10:16:12,236 - src.data_loader - INFO - Loading processed fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/fraud_data_processed.csv
+2026-02-01 10:16:12,416 - src.data_loader - INFO - Successfully loaded 151112 processed records

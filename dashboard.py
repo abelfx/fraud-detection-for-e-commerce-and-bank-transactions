@@ -441,7 +441,26 @@ if main_page == "Fraud Detector":
                         signup_time = purchase_time - timedelta(hours=time_since_signup)
                         
                         # Get sample row structure from the loaded data
-                        sample_row = df.iloc[0:1].copy()
+                        if df is not None:
+                            sample_row = df.iloc[0:1].copy()
+                        else:
+                            # Create a dummy structure when data is missing (deployment mode)
+                            sample_row = pd.DataFrame([{
+                                'user_id': 0,
+                                'purchase_value': 0.0,  # Will be updated
+                                'signup_time': datetime.now(),
+                                'purchase_time': datetime.now(),
+                                'device_id': 'unknown_device',
+                                'source': 'Direct',
+                                'browser': 'Chrome',
+                                'sex': 'M',
+                                'age': 0,
+                                'ip_address': '0.0.0.0',
+                                'class': 0,
+                                'ip_country': 'United States',
+                                'is_high_risk_country': 0
+                            }])
+                        
                         sample_row['purchase_value'] = purchase_value
                         sample_row['age'] = age
                         sample_row['signup_time'] = signup_time.strftime('%Y-%m-%d %H:%M:%S')
@@ -454,8 +473,15 @@ if main_page == "Fraud Detector":
                         if ds_name in st.session_state.processed_data:
                             df_processed = st.session_state.processed_data[ds_name]
                         else:
-                            loader = DataLoader()
-                            df_processed = loader.load_processed_data(ds_name)
+                            try:
+                                loader = DataLoader()
+                                df_processed = loader.load_processed_data(ds_name)
+                            except Exception:
+                                # Fallback if processed data is missing (deployment mode)
+                                st.warning("Using synthetic data for preprocessor fitting (Deployment Mode)")
+                                # Use X_sample (which has correct schema) to create dummy training data
+                                df_processed = pd.concat([X_sample] * 5, ignore_index=True)
+                                df_processed[data_config.target_column] = 0
                         
                         # Fit preprocessor on training data
                         y = df_processed[data_config.target_column]
