@@ -604,3 +604,19 @@ Name: count, dtype: int64
 2026-01-31 22:40:45,719 - src.data_loader - INFO - Loading credit card data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/creditcard.csv
 2026-01-31 22:40:47,314 - src.data_loader - INFO - Successfully loaded 284807 credit card records
 2026-01-31 22:40:47,315 - src.data_loader - WARNING - Target column 'class' not found in creditcard data
+2026-02-01 09:33:29,629 - src.data_loader - INFO - Loading fraud data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/Fraud_Data.csv
+2026-02-01 09:33:29,965 - src.data_loader - INFO - Successfully loaded 151112 fraud records
+2026-02-01 09:33:29,969 - src.data_loader - INFO - fraud class distribution:
+class
+0    136961
+1     14151
+Name: count, dtype: int64
+2026-02-01 09:33:30,002 - src.data_loader - INFO - Loading IP to country mapping from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/IpAddress_to_Country.csv
+2026-02-01 09:33:30,051 - src.data_loader - INFO - Successfully loaded 138846 IP mappings
+2026-02-01 09:33:46,992 - src.data_loader - INFO - Saving processed fraud data to /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/fraud_data_processed.csv
+2026-02-01 09:33:48,303 - src.data_loader - INFO - Successfully saved 151112 records
+2026-02-01 09:36:09,301 - src.data_loader - INFO - Loading credit card data from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/raw/creditcard.csv
+2026-02-01 09:36:10,760 - src.data_loader - INFO - Successfully loaded 284807 credit card records
+2026-02-01 09:36:10,760 - src.data_loader - WARNING - Target column 'class' not found in creditcard data
+2026-02-01 09:36:16,007 - src.data_loader - INFO - Saving processed creditcard data to /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/data/processed/creditcard_processed.csv
+2026-02-01 09:36:29,897 - src.data_loader - INFO - Successfully saved 284807 records
