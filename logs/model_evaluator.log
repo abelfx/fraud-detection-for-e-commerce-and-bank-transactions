@@ -1,0 +1,1053 @@
+2026-01-30 11:11:35,130 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:11:35,148 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:11:35,149 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 11:11:35,149 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 11:11:35,149 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:11:35,149 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:11:38,450 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - ROC AUC:            0.7608
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - Average Precision:  0.6194
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:11:38,469 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:12:22,792 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 11:12:22,811 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:12:22,812 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:12:24,336 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 11:12:24,411 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 11:12:24,412 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 11:12:24,412 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 11:12:24,412 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 11:12:24,412 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 11:12:24,413 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:31:05,762 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:31:05,778 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:35:04,582 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:35:04,603 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:35:04,604 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:35:04,604 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 11:35:04,604 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 11:35:04,604 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:35:04,604 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:35:07,262 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 11:35:07,379 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 11:35:07,380 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:38:42,494 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 11:38:42,510 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 11:38:44,962 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - ============================================================
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 11:38:44,990 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 11:38:44,991 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 11:38:44,991 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:01:56,497 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:01:56,526 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:01:56,527 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:01:56,528 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:01:56,528 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 12:01:56,529 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 12:01:56,530 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 12:01:56,531 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 12:01:56,532 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 12:01:56,533 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 12:01:56,533 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 12:01:56,534 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:02:08,467 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:02:08,487 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:02:08,488 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:02:08,488 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:02:08,489 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 12:02:08,489 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 12:02:08,489 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 12:02:08,490 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 12:02:08,490 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 12:02:08,491 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 12:02:08,491 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:02:08,492 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:02:11,976 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:02:12,002 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:02:12,002 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:02:12,003 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:02:12,003 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 12:02:12,003 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 12:02:12,003 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 12:02:12,004 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 12:02:12,004 - src.model_evaluator - INFO - ROC AUC:            0.7608
+2026-01-30 12:02:12,004 - src.model_evaluator - INFO - Average Precision:  0.6194
+2026-01-30 12:02:12,004 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:02:12,004 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:07:50,887 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:07:50,904 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:07:50,905 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:07:50,905 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:07:50,905 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 12:07:50,905 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 12:07:50,906 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 12:07:50,906 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 12:07:50,906 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 12:07:50,906 - src.model_evaluator - INFO - Average Precision:  0.6205
+2026-01-30 12:07:50,907 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:07:50,907 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:07:51,390 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:07:51,408 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:07:51,409 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:07:51,409 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:07:51,410 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 12:07:51,410 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 12:07:51,411 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 12:07:51,411 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 12:07:51,411 - src.model_evaluator - INFO - ROC AUC:            0.7613
+2026-01-30 12:07:51,411 - src.model_evaluator - INFO - Average Precision:  0.6199
+2026-01-30 12:07:51,412 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:07:51,412 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:07:52,905 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:07:52,931 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:07:52,933 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:07:52,934 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:07:52,934 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 12:07:52,935 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 12:07:52,936 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 12:07:52,937 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 12:07:52,937 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 12:07:52,938 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 12:07:52,938 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 12:07:52,939 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:29:55,965 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:29:56,003 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:29:56,003 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - Accuracy:           1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - Recall:             1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - F1 Score:           1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - ROC AUC:            1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - Average Precision:  1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:29:56,004 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:30:05,107 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - Accuracy:           1.0000
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - Recall:             1.0000
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - F1 Score:           1.0000
+2026-01-30 12:30:05,205 - src.model_evaluator - INFO - ROC AUC:            1.0000
+2026-01-30 12:30:05,206 - src.model_evaluator - INFO - Average Precision:  1.0000
+2026-01-30 12:30:05,206 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:30:05,206 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:39:18,609 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:39:18,658 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:39:18,658 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:39:18,658 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:39:18,658 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 12:39:18,658 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 12:39:18,659 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 12:39:22,066 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - ============================================================
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 12:39:22,203 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 12:39:22,204 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 12:39:22,204 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 12:39:22,204 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 12:39:22,205 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 12:39:22,205 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 14:06:30,388 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 14:06:30,422 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 14:06:30,422 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 14:06:30,422 - src.model_evaluator - INFO - ============================================================
+2026-01-30 14:06:30,422 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 14:06:30,422 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 14:06:30,423 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 14:08:05,982 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 14:08:06,008 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 14:08:06,008 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 14:08:06,008 - src.model_evaluator - INFO - ============================================================
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 14:08:06,009 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 14:15:09,752 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 14:15:09,854 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 14:15:09,856 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 14:15:09,857 - src.model_evaluator - INFO - ============================================================
+2026-01-30 14:15:09,858 - src.model_evaluator - INFO - Accuracy:           0.9555
+2026-01-30 14:15:09,860 - src.model_evaluator - INFO - Precision:          0.9953
+2026-01-30 14:15:09,860 - src.model_evaluator - INFO - Recall:             0.5276
+2026-01-30 14:15:09,860 - src.model_evaluator - INFO - F1 Score:           0.6896
+2026-01-30 14:15:09,861 - src.model_evaluator - INFO - ROC AUC:            0.7711
+2026-01-30 14:15:09,861 - src.model_evaluator - INFO - Average Precision:  0.6221
+2026-01-30 14:15:09,861 - src.model_evaluator - INFO - Specificity:        0.9997
+2026-01-30 14:15:09,862 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 14:15:52,236 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 14:15:52,268 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 14:15:52,269 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 14:15:52,269 - src.model_evaluator - INFO - ============================================================
+2026-01-30 14:15:52,269 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 14:15:52,269 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 14:15:52,269 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 14:15:52,270 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 14:15:52,270 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 14:15:52,270 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 14:15:52,270 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 14:15:52,271 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 14:16:23,602 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 14:16:23,628 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 14:16:23,628 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 14:16:23,628 - src.model_evaluator - INFO - ============================================================
+2026-01-30 14:16:23,628 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 14:16:23,628 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 14:16:23,629 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:36:18,346 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:36:18,428 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:36:18,429 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:36:18,430 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:36:18,430 - src.model_evaluator - INFO - Accuracy:           0.9724
+2026-01-30 16:36:18,430 - src.model_evaluator - INFO - Precision:          0.0544
+2026-01-30 16:36:18,431 - src.model_evaluator - INFO - Recall:             0.9184
+2026-01-30 16:36:18,432 - src.model_evaluator - INFO - F1 Score:           0.1027
+2026-01-30 16:36:18,432 - src.model_evaluator - INFO - ROC AUC:            0.9748
+2026-01-30 16:36:18,433 - src.model_evaluator - INFO - Average Precision:  0.7298
+2026-01-30 16:36:18,433 - src.model_evaluator - INFO - Specificity:        0.9725
+2026-01-30 16:36:18,434 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:36:18,532 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:36:18,591 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:36:18,591 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:36:18,591 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:36:18,592 - src.model_evaluator - INFO - Accuracy:           0.9982
+2026-01-30 16:36:18,592 - src.model_evaluator - INFO - Precision:          0.4886
+2026-01-30 16:36:18,592 - src.model_evaluator - INFO - Recall:             0.8776
+2026-01-30 16:36:18,593 - src.model_evaluator - INFO - F1 Score:           0.6277
+2026-01-30 16:36:18,593 - src.model_evaluator - INFO - ROC AUC:            0.9848
+2026-01-30 16:36:18,593 - src.model_evaluator - INFO - Average Precision:  0.8244
+2026-01-30 16:36:18,594 - src.model_evaluator - INFO - Specificity:        0.9984
+2026-01-30 16:36:18,594 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:36:18,621 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:36:18,679 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:36:18,680 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:36:18,680 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:36:18,680 - src.model_evaluator - INFO - Accuracy:           0.9986
+2026-01-30 16:36:18,681 - src.model_evaluator - INFO - Precision:          0.5695
+2026-01-30 16:36:18,681 - src.model_evaluator - INFO - Recall:             0.8776
+2026-01-30 16:36:18,681 - src.model_evaluator - INFO - F1 Score:           0.6908
+2026-01-30 16:36:18,681 - src.model_evaluator - INFO - ROC AUC:            0.9810
+2026-01-30 16:36:18,682 - src.model_evaluator - INFO - Average Precision:  0.8644
+2026-01-30 16:36:18,682 - src.model_evaluator - INFO - Specificity:        0.9989
+2026-01-30 16:36:18,682 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:47:59,508 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:47:59,564 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:47:59,565 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:47:59,566 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:47:59,567 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 16:47:59,568 - src.model_evaluator - INFO - Precision:          0.9966
+2026-01-30 16:47:59,569 - src.model_evaluator - INFO - Recall:             0.5166
+2026-01-30 16:47:59,570 - src.model_evaluator - INFO - F1 Score:           0.6805
+2026-01-30 16:47:59,570 - src.model_evaluator - INFO - ROC AUC:            0.7672
+2026-01-30 16:47:59,571 - src.model_evaluator - INFO - Average Precision:  0.6173
+2026-01-30 16:47:59,572 - src.model_evaluator - INFO - Specificity:        0.9998
+2026-01-30 16:47:59,573 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:47:59,689 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:47:59,725 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:47:59,725 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:47:59,725 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:47:59,726 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 16:47:59,726 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 16:47:59,726 - src.model_evaluator - INFO - Recall:             0.5155
+2026-01-30 16:47:59,727 - src.model_evaluator - INFO - F1 Score:           0.6803
+2026-01-30 16:47:59,727 - src.model_evaluator - INFO - ROC AUC:            0.7589
+2026-01-30 16:47:59,727 - src.model_evaluator - INFO - Average Precision:  0.6134
+2026-01-30 16:47:59,727 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 16:47:59,727 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:47:59,743 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:47:59,784 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:47:59,784 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:47:59,785 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:47:59,785 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 16:47:59,785 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 16:47:59,785 - src.model_evaluator - INFO - Recall:             0.5159
+2026-01-30 16:47:59,786 - src.model_evaluator - INFO - F1 Score:           0.6805
+2026-01-30 16:47:59,786 - src.model_evaluator - INFO - ROC AUC:            0.7648
+2026-01-30 16:47:59,786 - src.model_evaluator - INFO - Average Precision:  0.6161
+2026-01-30 16:47:59,786 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 16:47:59,787 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 16:59:50,948 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - ============================================================
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 16:59:50,983 - src.model_evaluator - INFO - ROC AUC:            0.7682
+2026-01-30 16:59:50,984 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 16:59:50,984 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 16:59:50,984 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:14:39,709 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 17:14:39,744 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 17:14:39,745 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 17:14:39,745 - src.model_evaluator - INFO - ROC AUC:            0.7627
+2026-01-30 17:14:39,745 - src.model_evaluator - INFO - Average Precision:  0.6195
+2026-01-30 17:14:39,745 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:14:39,745 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:15:52,949 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 17:15:52,984 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 17:15:52,985 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 17:15:52,985 - src.model_evaluator - INFO - ROC AUC:            0.7627
+2026-01-30 17:15:52,985 - src.model_evaluator - INFO - Average Precision:  0.6195
+2026-01-30 17:15:52,985 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:15:52,985 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:26:48,868 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:26:48,905 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:26:48,905 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:26:48,905 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:26:48,905 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - ROC AUC:            0.7627
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - Average Precision:  0.6195
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:26:48,906 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:26:58,815 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:26:58,849 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:26:58,849 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:26:58,849 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:26:58,849 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 17:26:58,849 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - ROC AUC:            0.7671
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - Average Precision:  0.6199
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:26:58,850 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:31:28,606 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:31:28,672 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:31:28,673 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:31:28,674 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:31:28,675 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 17:31:28,677 - src.model_evaluator - INFO - Precision:          0.9966
+2026-01-30 17:31:28,678 - src.model_evaluator - INFO - Recall:             0.5166
+2026-01-30 17:31:28,679 - src.model_evaluator - INFO - F1 Score:           0.6805
+2026-01-30 17:31:28,681 - src.model_evaluator - INFO - ROC AUC:            0.7672
+2026-01-30 17:31:28,681 - src.model_evaluator - INFO - Average Precision:  0.6173
+2026-01-30 17:31:28,682 - src.model_evaluator - INFO - Specificity:        0.9998
+2026-01-30 17:31:28,682 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:31:28,784 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:31:28,838 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:31:28,839 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:31:28,840 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:31:28,841 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 17:31:28,841 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 17:31:28,841 - src.model_evaluator - INFO - Recall:             0.5155
+2026-01-30 17:31:28,842 - src.model_evaluator - INFO - F1 Score:           0.6803
+2026-01-30 17:31:28,842 - src.model_evaluator - INFO - ROC AUC:            0.7589
+2026-01-30 17:31:28,843 - src.model_evaluator - INFO - Average Precision:  0.6134
+2026-01-30 17:31:28,843 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:31:28,844 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 17:31:28,867 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 17:31:28,920 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 17:31:28,920 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 17:31:28,921 - src.model_evaluator - INFO - ============================================================
+2026-01-30 17:31:28,922 - src.model_evaluator - INFO - Accuracy:           0.9546
+2026-01-30 17:31:28,922 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 17:31:28,923 - src.model_evaluator - INFO - Recall:             0.5159
+2026-01-30 17:31:28,923 - src.model_evaluator - INFO - F1 Score:           0.6805
+2026-01-30 17:31:28,923 - src.model_evaluator - INFO - ROC AUC:            0.7648
+2026-01-30 17:31:28,924 - src.model_evaluator - INFO - Average Precision:  0.6161
+2026-01-30 17:31:28,924 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 17:31:28,925 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:16:50,365 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:16:50,375 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:16:50,405 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:16:50,405 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:16:50,405 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - ROC AUC:            0.7627
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - Average Precision:  0.6195
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:16:50,406 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:16:50,491 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - ROC AUC:            0.7627
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - Average Precision:  0.6195
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:16:50,492 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:17:44,393 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:17:44,427 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:17:44,427 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:17:44,427 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - Accuracy:           0.9557
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - Precision:          0.9993
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - Recall:             0.5269
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - F1 Score:           0.6900
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - ROC AUC:            0.7671
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - Average Precision:  0.6199
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:17:44,428 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:22:10,182 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - Accuracy:           1.0000
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - Recall:             1.0000
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - F1 Score:           1.0000
+2026-01-30 18:22:10,238 - src.model_evaluator - INFO - ROC AUC:            1.0000
+2026-01-30 18:22:10,239 - src.model_evaluator - INFO - Average Precision:  1.0000
+2026-01-30 18:22:10,239 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:22:10,239 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:22:21,339 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:22:21,394 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:22:21,394 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:22:21,394 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - Accuracy:           1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - Recall:             1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - F1 Score:           1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - ROC AUC:            1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - Average Precision:  1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:22:21,395 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:26:41,328 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:26:41,413 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:26:41,414 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:26:41,415 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:26:41,417 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-30 18:26:41,418 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-30 18:26:41,420 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-30 18:26:41,421 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-30 18:26:41,424 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-30 18:26:41,424 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-30 18:26:41,427 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-30 18:26:41,430 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:26:41,514 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:26:41,568 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:26:41,569 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:26:41,570 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:26:41,570 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 18:26:41,571 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 18:26:41,571 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 18:26:41,571 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-30 18:26:41,572 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-30 18:26:41,572 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-30 18:26:41,573 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:26:41,573 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:26:41,595 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:26:41,652 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:26:41,653 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:26:41,653 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:26:41,654 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 18:26:41,654 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-30 18:26:41,655 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 18:26:41,655 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-30 18:26:41,655 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-30 18:26:41,656 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-30 18:26:41,656 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-30 18:26:41,657 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:35:48,283 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:35:48,342 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 18:35:48,343 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 18:36:04,655 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - ============================================================
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-30 18:36:04,689 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-30 18:36:04,690 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-30 18:36:04,690 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-30 18:36:04,690 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 22:12:25,168 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - ============================================================
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-30 22:12:25,216 - src.model_evaluator - INFO - ============================================================
+
+2026-01-30 22:12:57,102 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-30 22:12:57,194 - src.model_evaluator - INFO - 
+============================================================
+2026-01-30 22:12:57,194 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-30 22:12:57,194 - src.model_evaluator - INFO - ============================================================
+2026-01-30 22:12:57,194 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-30 22:12:57,194 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-30 22:12:57,195 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-30 22:12:57,195 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-30 22:12:57,196 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-30 22:12:57,196 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-30 22:12:57,196 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-30 22:12:57,196 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 00:04:27,260 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 00:04:27,294 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 00:04:27,294 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 00:04:27,294 - src.model_evaluator - INFO - ============================================================
+2026-01-31 00:04:27,294 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 00:04:27,294 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 00:04:27,295 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 00:04:46,810 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - ============================================================
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 00:04:46,843 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 00:04:50,758 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - ============================================================
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 00:04:50,791 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 00:04:50,792 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 00:04:50,792 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 00:04:50,792 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 00:04:50,792 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 00:04:50,792 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:27:25,622 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:27:25,697 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:27:25,698 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:27:25,699 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:27:25,701 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-31 08:27:25,702 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-31 08:27:25,703 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-31 08:27:25,705 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-31 08:27:25,706 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-31 08:27:25,707 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-31 08:27:25,707 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-31 08:27:25,709 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:27:25,806 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:27:25,857 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:27:25,857 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:27:25,858 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:27:25,858 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 08:27:25,859 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 08:27:25,859 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 08:27:25,860 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 08:27:25,860 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 08:27:25,861 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 08:27:25,861 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 08:27:25,862 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:27:25,886 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:27:25,936 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:27:25,937 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:27:25,937 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:27:25,938 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 08:27:25,938 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 08:27:25,939 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 08:27:25,940 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 08:27:25,940 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 08:27:25,941 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 08:27:25,941 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 08:27:25,941 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:41:41,029 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:41:41,177 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:41:41,178 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:41:41,179 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:41:41,179 - src.model_evaluator - INFO - Accuracy:           0.9724
+2026-01-31 08:41:41,179 - src.model_evaluator - INFO - Precision:          0.0544
+2026-01-31 08:41:41,179 - src.model_evaluator - INFO - Recall:             0.9184
+2026-01-31 08:41:41,180 - src.model_evaluator - INFO - F1 Score:           0.1027
+2026-01-31 08:41:41,180 - src.model_evaluator - INFO - ROC AUC:            0.9748
+2026-01-31 08:41:41,180 - src.model_evaluator - INFO - Average Precision:  0.7298
+2026-01-31 08:41:41,181 - src.model_evaluator - INFO - Specificity:        0.9725
+2026-01-31 08:41:41,181 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:41:41,281 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:41:41,339 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:41:41,339 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:41:41,340 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:41:41,340 - src.model_evaluator - INFO - Accuracy:           0.9982
+2026-01-31 08:41:41,341 - src.model_evaluator - INFO - Precision:          0.4886
+2026-01-31 08:41:41,341 - src.model_evaluator - INFO - Recall:             0.8776
+2026-01-31 08:41:41,341 - src.model_evaluator - INFO - F1 Score:           0.6277
+2026-01-31 08:41:41,341 - src.model_evaluator - INFO - ROC AUC:            0.9848
+2026-01-31 08:41:41,342 - src.model_evaluator - INFO - Average Precision:  0.8244
+2026-01-31 08:41:41,342 - src.model_evaluator - INFO - Specificity:        0.9984
+2026-01-31 08:41:41,342 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 08:41:41,389 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 08:41:41,447 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 08:41:41,448 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 08:41:41,448 - src.model_evaluator - INFO - ============================================================
+2026-01-31 08:41:41,448 - src.model_evaluator - INFO - Accuracy:           0.9986
+2026-01-31 08:41:41,449 - src.model_evaluator - INFO - Precision:          0.5695
+2026-01-31 08:41:41,449 - src.model_evaluator - INFO - Recall:             0.8776
+2026-01-31 08:41:41,449 - src.model_evaluator - INFO - F1 Score:           0.6908
+2026-01-31 08:41:41,449 - src.model_evaluator - INFO - ROC AUC:            0.9810
+2026-01-31 08:41:41,450 - src.model_evaluator - INFO - Average Precision:  0.8644
+2026-01-31 08:41:41,450 - src.model_evaluator - INFO - Specificity:        0.9989
+2026-01-31 08:41:41,450 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 21:45:35,268 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - ============================================================
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 21:45:35,303 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 21:45:38,705 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - ============================================================
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 21:45:38,756 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 21:47:02,804 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 21:47:02,889 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 21:47:02,891 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 21:47:02,892 - src.model_evaluator - INFO - ============================================================
+2026-01-31 21:47:02,893 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-31 21:47:02,894 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-31 21:47:02,896 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-31 21:47:02,897 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-31 21:47:02,898 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-31 21:47:02,898 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-31 21:47:02,900 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-31 21:47:02,900 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 21:47:02,993 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 21:47:03,050 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 21:47:03,051 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 21:47:03,051 - src.model_evaluator - INFO - ============================================================
+2026-01-31 21:47:03,052 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 21:47:03,052 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 21:47:03,052 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 21:47:03,053 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 21:47:03,053 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 21:47:03,053 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 21:47:03,053 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 21:47:03,055 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 21:47:03,086 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 21:47:03,156 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 21:47:03,156 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 21:47:03,157 - src.model_evaluator - INFO - ============================================================
+2026-01-31 21:47:03,157 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 21:47:03,158 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 21:47:03,158 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 21:47:03,158 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 21:47:03,159 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 21:47:03,159 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 21:47:03,159 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 21:47:03,160 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:05:26,427 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:05:26,486 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 22:05:26,487 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:05:31,586 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:05:31,660 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:05:31,660 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 22:05:31,661 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:07:49,539 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:07:49,661 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:07:49,662 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:07:49,662 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:07:49,663 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-31 22:07:49,663 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-31 22:07:49,664 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-31 22:07:49,665 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-31 22:07:49,665 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-31 22:07:49,666 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-31 22:07:49,667 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-31 22:07:49,667 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:07:49,769 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:07:49,832 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:07:49,833 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:07:49,834 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:07:49,835 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:07:49,835 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 22:07:49,836 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:07:49,836 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 22:07:49,837 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 22:07:49,838 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 22:07:49,839 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 22:07:49,839 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:07:49,886 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:07:49,954 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:07:49,955 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:07:49,956 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:07:49,956 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:07:49,957 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 22:07:49,957 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:07:49,958 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 22:07:49,959 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 22:07:49,959 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 22:07:49,959 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 22:07:49,960 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:22:55,061 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:22:55,159 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:22:55,161 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:22:55,162 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:22:55,163 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-31 22:22:55,164 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-31 22:22:55,166 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-31 22:22:55,167 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-31 22:22:55,169 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-31 22:22:55,172 - src.model_evaluator - INFO - Average Precision:  0.6208
+2026-01-31 22:22:55,173 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-31 22:22:55,174 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:22:55,275 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:22:55,338 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:22:55,339 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:22:55,339 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:22:55,340 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:22:55,340 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 22:22:55,341 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:22:55,341 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 22:22:55,342 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 22:22:55,343 - src.model_evaluator - INFO - Average Precision:  0.6157
+2026-01-31 22:22:55,343 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 22:22:55,344 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:22:55,393 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:22:55,464 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:22:55,465 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:22:55,466 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:22:55,467 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:22:55,467 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 22:22:55,468 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:22:55,468 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 22:22:55,469 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 22:22:55,469 - src.model_evaluator - INFO - Average Precision:  0.6155
+2026-01-31 22:22:55,469 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 22:22:55,470 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:27:43,853 - src.model_evaluator - INFO - Finding optimal threshold based on f1
+2026-01-31 22:27:43,862 - src.model_evaluator - INFO - Optimal threshold: 0.9838
+2026-01-31 22:27:43,863 - src.model_evaluator - INFO - Metrics at optimal threshold: {'threshold': 0.9837823472645394, 'precision': 1.0, 'recall': 0.5229681978798587, 'f1_score': 0.6867749419502651}
+2026-01-31 22:35:51,781 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:35:51,947 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:35:51,948 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:35:51,949 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:35:51,950 - src.model_evaluator - INFO - Accuracy:           0.9551
+2026-01-31 22:35:51,951 - src.model_evaluator - INFO - Precision:          0.9933
+2026-01-31 22:35:51,952 - src.model_evaluator - INFO - Recall:             0.5240
+2026-01-31 22:35:51,954 - src.model_evaluator - INFO - F1 Score:           0.6861
+2026-01-31 22:35:51,955 - src.model_evaluator - INFO - ROC AUC:            0.7714
+2026-01-31 22:35:51,955 - src.model_evaluator - INFO - AUPRC (AP):         0.6208 *** PRIMARY METRIC FOR IMBALANCED DATA ***
+2026-01-31 22:35:51,956 - src.model_evaluator - INFO - Specificity:        0.9996
+2026-01-31 22:35:51,957 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:35:52,217 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:35:52,279 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:35:52,280 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:35:52,281 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:35:52,282 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:35:52,282 - src.model_evaluator - INFO - Precision:          1.0000
+2026-01-31 22:35:52,283 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:35:52,285 - src.model_evaluator - INFO - F1 Score:           0.6868
+2026-01-31 22:35:52,285 - src.model_evaluator - INFO - ROC AUC:            0.7616
+2026-01-31 22:35:52,286 - src.model_evaluator - INFO - AUPRC (AP):         0.6157 *** PRIMARY METRIC FOR IMBALANCED DATA ***
+2026-01-31 22:35:52,287 - src.model_evaluator - INFO - Specificity:        1.0000
+2026-01-31 22:35:52,287 - src.model_evaluator - INFO - ============================================================
+
+2026-01-31 22:35:52,357 - src.model_evaluator - INFO - Evaluating model performance
+2026-01-31 22:35:52,442 - src.model_evaluator - INFO - 
+============================================================
+2026-01-31 22:35:52,444 - src.model_evaluator - INFO - EVALUATION METRICS
+2026-01-31 22:35:52,445 - src.model_evaluator - INFO - ============================================================
+2026-01-31 22:35:52,445 - src.model_evaluator - INFO - Accuracy:           0.9553
+2026-01-31 22:35:52,446 - src.model_evaluator - INFO - Precision:          0.9987
+2026-01-31 22:35:52,447 - src.model_evaluator - INFO - Recall:             0.5230
+2026-01-31 22:35:52,447 - src.model_evaluator - INFO - F1 Score:           0.6865
+2026-01-31 22:35:52,448 - src.model_evaluator - INFO - ROC AUC:            0.7618
+2026-01-31 22:35:52,448 - src.model_evaluator - INFO - AUPRC (AP):         0.6155 *** PRIMARY METRIC FOR IMBALANCED DATA ***
+2026-01-31 22:35:52,448 - src.model_evaluator - INFO - Specificity:        0.9999
+2026-01-31 22:35:52,449 - src.model_evaluator - INFO - ============================================================
+
