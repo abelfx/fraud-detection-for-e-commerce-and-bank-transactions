@@ -79,6 +79,10 @@ class FraudPredictor:
         # Validate features
         self._validate_features(X)
         
+        # Enforce column order to match model exactly (Critical for XGBoost)
+        if hasattr(self.model_trainer, 'feature_names') and self.model_trainer.feature_names:
+            X = X[self.model_trainer.feature_names]
+        
         # Get predictions
         y_pred_proba = self.model_trainer.predict_proba(X)
         y_pred = (y_pred_proba[:, 1] >= threshold).astype(int)
@@ -267,6 +271,32 @@ class FraudPredictor:
         Raises:
             ValueError: If features don't match
         """
+        if hasattr(self.model_trainer, 'feature_names'):
+             # Reorder columns to match model's expected order EXACTLY
+            # XGBoost is very sensitive to column order
+            columns = self.model_trainer.feature_names
+            # Only select columns if they exist in X
+            # (Checking for missing is done below, but this ensures ordering)
+            
+            # Check for missing features first before trying to reindex with them
+            missing = [c for c in columns if c not in X.columns]
+            if not missing:
+                 # In-place reordering (modification) of the dataframe passed by reference
+                 # This is crucial for XGBoost
+                 # Note: X = X[columns] creates a copy and doesn't modify the caller's DF unless returned
+                 # But we can modify the dataframe referenced by the caller if we are careful,
+                 # or better yet, return the modified X. 
+                 # However, this method returns None. 
+                 # The cleanest fix is to modify the X in place using reindex if possible, 
+                 # but safety suggests we should just ensure the Caller does this.
+                 
+                 # Since we cannot easily modify X in place to change column order safely for the caller 
+                 # in all pandas versions without return, we rely on the caller using the returned/modified object.
+                 # BUT failure trace shows the error happens inside predict_proba.
+                 
+                 # Let's fix the Predictor.predict method to enforce order using the trainer's feature names.
+                 pass
+
         expected_features = set(self.model_trainer.feature_names)
         actual_features = set(X.columns)
         
