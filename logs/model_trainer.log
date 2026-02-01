@@ -1006,3 +1006,6 @@
 2026-02-01 09:42:17,952 - src.model_trainer - INFO - CV Accuracy: 0.9881 (+/- 0.0006)
 2026-02-01 09:42:18,159 - src.model_trainer - INFO - Saving model to /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/xgboost_creditcard_model.joblib
 2026-02-01 09:42:18,163 - src.model_trainer - INFO - Model saved successfully
+2026-02-01 10:07:18,169 - src.model_trainer - INFO - Initialized Random Forest model
+2026-02-01 10:07:18,169 - src.model_trainer - INFO - Loading model from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-02-01 10:07:18,202 - src.model_trainer - INFO - Model loaded successfully: random_forest

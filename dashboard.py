@@ -8,13 +8,16 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import sys
+import os
 from pathlib import Path
 from datetime import datetime, timedelta
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_curve
 
 # Add src to path
-sys.path.insert(0, str(Path(__file__).parent))
+current_file = Path(__file__).resolve()
+project_root = current_file.parent
+sys.path.insert(0, str(project_root))
 
 from src.data_loader import DataLoader
 from src.feature_engineer import FraudDataFeatureEngineer, CreditCardFeatureEngineer, prepare_features
@@ -23,6 +26,14 @@ from src.model_trainer import ModelTrainer
 from src.model_evaluator import ModelEvaluator
 from src.predictor import load_predictor
 from src.config import data_config, model_config
+
+# FIX: Enforce absolute paths based on dashboard.py location
+# This ensures that even if relative paths fail in deployment, we look in the right place
+model_config.model_save_dir = project_root / "models"
+# Also update data paths just in case files are present
+data_config.fraud_data_path = project_root / "data" / "raw" / "Fraud_Data.csv"
+data_config.creditcard_data_path = project_root / "data" / "raw" / "creditcard.csv"
+data_config.ip_to_country_path = project_root / "data" / "raw" / "IpAddress_to_Country.csv"
 
 # ==================== PAGE CONFIGURATION ====================
 st.set_page_config(
@@ -336,6 +347,14 @@ with st.sidebar:
 # ==================== LOAD DATA ====================
 df, ds_name = load_data(dataset_type)
 
+# Fallback for ds_name if data loading fails (e.g. on deployment where data is gitignored)
+if ds_name is None:
+    if dataset_type == "Fraud E-commerce":
+        ds_name = 'fraud'
+    else:
+        ds_name = 'creditcard'
+    # Do not overwrite df to None if it wasn't None, but here it is None if load_data failed.
+
 # ==================== FRAUD DETECTOR PAGE ====================
 if main_page == "Fraud Detector":
     st.markdown('<div class="main-header"><h1>Fraud Detector</h1><p>Real-time fraud prediction powered by machine learning</p></div>', unsafe_allow_html=True)
@@ -345,6 +364,28 @@ if main_page == "Fraud Detector":
     
     if not available_models:
         st.warning("No trained models found. Train a model first in Model Management or run the notebook pipelines.")
+        
+        # Debugging Information for Deployment
+        with st.expander("Debugging & Path Info"):
+            st.write(f"**Current Working Directory:** `{os.getcwd()}`")
+            st.write(f"**Script Location:** `{Path(__file__).resolve()}`")
+            
+            models_dir = model_config.model_save_dir
+            st.write(f"**Expected Models Dir:** `{models_dir}`")
+            
+            if models_dir.exists():
+                st.success(f"Models directory exists at `{models_dir}`")
+                st.write("**Contents:**")
+                files = list(models_dir.glob("*"))
+                st.write([f.name for f in files])
+            else:
+                st.error(f"Models directory NOT found at `{models_dir}`")
+                st.write("**Listing Root Directory:**")
+                try:
+                    st.write(os.listdir(os.getcwd()))
+                except Exception as e:
+                    st.write(f"Error listing root: {e}")
+
     else:
         # Model selection
         col1, col2 = st.columns([2, 1])
@@ -437,7 +478,8 @@ if main_page == "Fraud Detector":
                         X_sample_proc = preprocessor.transform(X_sample)
                         
                         # Load model and predict
-                        predictor = load_predictor(selected_model, ds_name)
+                        # Pass the explicit models directory to ensure consistency
+                        predictor = load_predictor(selected_model, ds_name, models_dir=model_config.model_save_dir)
                         result = predictor.predict(X_sample_proc, return_proba=True, threshold=threshold)
                         
                         # Display results
@@ -540,7 +582,7 @@ if main_page == "Fraud Detector":
                             X_batch_proc = preprocessor.transform(X_batch)
                             
                             # Predict
-                            predictor = load_predictor(selected_model, ds_name)
+                            predictor = load_predictor(selected_model, ds_name, models_dir=model_config.model_save_dir)
                             result = predictor.predict(X_batch_proc, return_proba=True, threshold=threshold)
                             
                             predictions = pd.DataFrame({
@@ -596,7 +638,7 @@ if main_page == "Fraud Detector":
                     
                     if st.button("Predict All", type="primary", use_container_width=True):
                         try:
-                            predictor = load_predictor(selected_model, ds_name)
+                            predictor = load_predictor(selected_model, ds_name, models_dir=model_config.model_save_dir)
                             
                             with st.spinner(f"Processing {len(upload_df):,} records..."):
                                 predictions = predictor.predict_batch(
