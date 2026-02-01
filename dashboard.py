@@ -337,12 +337,8 @@ with st.sidebar:
     st.metric("Datasets Loaded", data_available)
     
     st.markdown("---")
-    st.markdown("### About")
-    st.info(
-        "**Fraud Detection System v2.0**\n\n"
-        "ML-powered fraud detection\n\n"
-        "© 2024 Adey Innovations Inc."
-    )
+    # About section removed
+
 
 # ==================== LOAD DATA ====================
 df, ds_name = load_data(dataset_type)
@@ -478,7 +474,7 @@ if main_page == "Fraud Detector":
                                 df_processed = loader.load_processed_data(ds_name)
                             except Exception:
                                 # Fallback if processed data is missing (deployment mode)
-                                st.warning("Using synthetic data for preprocessor fitting (Deployment Mode)")
+                                # st.warning("Using synthetic data for preprocessor fitting (Deployment Mode)")
                                 # Use X_sample (which has correct schema) to create dummy training data
                                 df_processed = pd.concat([X_sample] * 5, ignore_index=True)
                                 df_processed[data_config.target_column] = 0

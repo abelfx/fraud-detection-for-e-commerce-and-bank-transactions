@@ -813,3 +813,25 @@
 2026-02-01 11:11:09,205 - src.preprocessor - INFO - Scaled features using fitted scaler
 2026-02-01 11:11:15,024 - src.preprocessor - INFO - Transforming data
 2026-02-01 11:11:15,026 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:00,894 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:00,896 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:13,989 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:13,992 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:26,178 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:13:26,292 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 11:13:26,294 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:26,297 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:30,535 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:13:30,650 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 11:13:30,652 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:30,654 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:33,421 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:13:33,530 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 11:13:33,531 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:33,534 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:13:42,343 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:13:42,430 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 11:13:42,432 - src.preprocessor - INFO - Transforming data
+2026-02-01 11:13:42,435 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 12:14:08,557 - src.preprocessor - INFO - Transforming data
+2026-02-01 12:14:08,560 - src.preprocessor - INFO - Scaled features using fitted scaler
