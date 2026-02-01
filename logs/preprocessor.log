@@ -761,3 +761,35 @@
 2026-02-01 10:16:12,582 - src.preprocessor - INFO - Fitted and scaled features
 2026-02-01 10:16:12,584 - src.preprocessor - INFO - Transforming data
 2026-02-01 10:16:12,585 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:42:01,727 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:42:01,833 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:42:01,834 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:42:01,836 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:42:13,235 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:42:13,338 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:42:13,339 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:42:13,341 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:42:15,778 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:42:15,882 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:42:15,883 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:42:15,884 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:42:17,964 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:42:18,060 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:42:18,061 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:42:18,063 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:42:18,940 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:42:19,034 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:42:19,035 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:42:19,037 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:48:20,186 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:48:20,311 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:48:20,313 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:48:20,314 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 10:51:33,884 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 10:51:34,022 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 10:51:34,024 - src.preprocessor - INFO - Transforming data
+2026-02-01 10:51:34,026 - src.preprocessor - INFO - Scaled features using fitted scaler
+2026-02-01 11:05:16,639 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:05:16,789 - src.preprocessor - INFO - Fitted and scaled features
+2026-02-01 11:05:30,841 - src.preprocessor - INFO - Fitting and transforming training data
+2026-02-01 11:05:30,985 - src.preprocessor - INFO - Fitted and scaled features

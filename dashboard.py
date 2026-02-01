@@ -483,61 +483,94 @@ if main_page == "Fraud Detector":
                                 df_processed = pd.concat([X_sample] * 5, ignore_index=True)
                                 df_processed[data_config.target_column] = 0
                         
-                        # Fit preprocessor on training data
-                        y = df_processed[data_config.target_column]
-                        X = df_processed.drop(columns=[data_config.target_column])
+                        # --- PREPROCESSING STRATEGY ---
+                        # Try to load saved Scaler (preferred for deployment)
+                        import joblib
+                        scaler_path = model_config.model_save_dir / "preprocessor_scaler.joblib"
+                        cols_path = model_config.model_save_dir / "feature_columns.joblib"
                         
-                        X_train, X_test, y_train, y_test = train_test_split(
-                            X, y, test_size=data_config.test_size,
-                            random_state=data_config.random_state, stratify=y
-                        )
+                        preprocessor = None
+                        feature_columns = None
                         
-                        preprocessor = DataPreprocessor(use_smote=False)
-                        X_train_proc, _ = preprocessor.fit_transform(X_train, y_train)
+                        if scaler_path.exists() and cols_path.exists():
+                            # OPTION A: Deployment Mode (No Data Needed)
+                            # st.info("Loading saved scaler state...") # Optional: show user
+                            preprocessor = joblib.load(scaler_path)
+                            feature_columns = joblib.load(cols_path)
                         
-                        # Transform sample (ensure correct columns)
-                        missing_cols = set(X_train.columns) - set(X_sample.columns)
-                        for col in missing_cols:
-                            X_sample[col] = 0
-                        
-                        X_sample = X_sample[X_train.columns]
-                        X_sample_proc = preprocessor.transform(X_sample)
-                        
-                        # Load model and predict
-                        # Pass the explicit models directory to ensure consistency
-                        predictor = load_predictor(selected_model, ds_name, models_dir=model_config.model_save_dir)
-                        result = predictor.predict(X_sample_proc, return_proba=True, threshold=threshold)
-                        
-                        # Display results
-                        st.markdown("---")
-                        st.markdown("### Analysis Results")
-                        
-                        col1, col2, col3 = st.columns(3)
-                        
-                        with col1:
-                            risk_color = "🔴" if result['predictions'][0] == 1 else "🟢"
-                            risk_text = "FRAUD" if result['predictions'][0] == 1 else "LEGITIMATE"
-                            st.metric("Prediction", f"{risk_color} {risk_text}")
-                        
-                        with col2:
-                            prob = result['fraud_probability'][0] * 100
-                            st.metric("Fraud Probability", f"{prob:.1f}%")
-                        
-                        with col3:
-                            confidence = max(result['fraud_probability'][0], 1 - result['fraud_probability'][0]) * 100
-                            st.metric("Confidence", f"{confidence:.1f}%")
-                        
-                        # Gauge chart
-                        fig = go.Figure(go.Indicator(
-                            mode="gauge+number+delta",
-                            value=result['fraud_probability'][0] * 100,
-                            domain={'x': [0, 1], 'y': [0, 1]},
-                            title={'text': "Fraud Risk Score"},
-                            gauge={
-                                'axis': {'range': [0, 100]},
-                                'bar': {'color': "darkblue"},
-                                'steps': [
-                                    {'range': [0, 30], 'color': '#00CC96'},
+                        elif df_processed is not None:
+                            # OPTION B: Training Mode (Refit on Real Data)
+                            # Fit preprocessor on training data
+                            y = df_processed[data_config.target_column]
+                            X = df_processed.drop(columns=[data_config.target_column])
+                            
+                            X_train, X_test, y_train, y_test = train_test_split(
+                                X, y, test_size=data_config.test_size,
+                                random_state=data_config.random_state, stratify=y
+                            )
+                            
+                            preprocessor = DataPreprocessor(use_smote=False)
+                            X_train_proc, _ = preprocessor.fit_transform(X_train, y_train)
+                            feature_columns = X_train.columns
+                            
+                        else:
+                            # OPTION C: Last Resort (Synthetic - WILL BE INACCURATE)
+                            data_fallback_msg = "Critical: No data or saved scaler found. Predictions will be inaccurate."
+                            st.error(data_fallback_msg)
+                            # Create dummy 
+                            cols = list(sample_row.columns) if df is not None else []
+                            # ... logic to crash or try best effort ...
+                            feature_columns = cols
+
+                        if preprocessor:
+                            # Transform sample (ensure correct columns)
+                            # 1. Add missing columns with 0
+                            missing_cols = set(feature_columns) - set(X_sample.columns)
+                            for col in missing_cols:
+                                X_sample[col] = 0
+                            
+                            # 2. Reorder columns to match scaler training exactly
+                            X_sample = X_sample[feature_columns]
+                            
+                            # 3. Transform
+                            X_sample_proc = preprocessor.transform(X_sample)
+                            
+                            # Load model and predict
+                            # Pass the explicit models directory to ensure consistency
+                            predictor = load_predictor(selected_model, ds_name, models_dir=model_config.model_save_dir)
+                            result = predictor.predict(X_sample_proc, return_proba=True, threshold=threshold)
+                            
+                            # Display results
+                            st.markdown("---")
+                            st.markdown("### Analysis Results")
+                            
+                            col1, col2, col3 = st.columns(3)
+                            
+                            with col1:
+                                risk_color = "🔴" if result['predictions'][0] == 1 else "🟢"
+                                risk_text = "FRAUD" if result['predictions'][0] == 1 else "LEGITIMATE"
+                                st.metric("Prediction", f"{risk_color} {risk_text}")
+                            
+                            with col2:
+                                prob = result['fraud_probability'][0] * 100
+                                st.metric("Fraud Probability", f"{prob:.1f}%")
+                            
+                            with col3:
+                                confidence = max(result['fraud_probability'][0], 1 - result['fraud_probability'][0]) * 100
+                                st.metric("Confidence", f"{confidence:.1f}%")
+                            
+                            # Gauge chart
+                            fig = go.Figure(go.Indicator(
+                                mode="gauge+number+delta",
+                                value=result['fraud_probability'][0] * 100,
+                                domain={'x': [0, 1], 'y': [0, 1]},
+                                title={'text': "Fraud Risk Score"},
+                                gauge={
+                                    'axis': {'range': [0, 100]},
+                                    'bar': {'color': "darkblue"},
+                                    'steps': [
+                                        {'range': [0, 30], 'color': '#00CC96'},
+
                                     {'range': [30, 60], 'color': '#FFA15A'},
                                     {'range': [60, 80], 'color': '#FF6692'},
                                     {'range': [80, 100], 'color': '#EF553B'}
