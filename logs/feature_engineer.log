@@ -1620,3 +1620,94 @@
 2026-02-01 10:16:12,231 - src.feature_engineer - INFO - Created user sharing features
 2026-02-01 10:16:12,231 - src.feature_engineer - INFO - Created high-risk country feature
 2026-02-01 10:16:12,235 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:42:01,451 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:42:01,455 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:42:01,457 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:42:01,458 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:42:01,459 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:42:01,460 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:42:01,460 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:42:01,462 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:42:01,463 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:42:01,471 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:42:01,473 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:42:01,473 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:42:01,478 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:42:12,973 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:42:12,976 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:42:12,977 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:42:12,978 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:42:12,979 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:42:12,979 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:42:12,980 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:42:12,981 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:42:12,982 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:42:12,988 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:42:12,989 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:42:12,989 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:42:12,993 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:42:15,524 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:42:15,527 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:42:15,528 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:42:15,529 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:42:15,530 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:42:15,530 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:42:15,531 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:42:15,532 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:42:15,532 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:42:15,538 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:42:15,540 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:42:15,540 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:42:15,543 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:42:17,720 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:42:17,724 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:42:17,725 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:42:17,726 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:42:17,726 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:42:17,727 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:42:17,727 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:42:17,728 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:42:17,729 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:42:17,735 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:42:17,737 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:42:17,737 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:42:17,741 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:42:18,707 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:42:18,710 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:42:18,711 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:42:18,713 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:42:18,713 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:42:18,714 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:42:18,714 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:42:18,715 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:42:18,715 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:42:18,721 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:42:18,722 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:42:18,723 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:42:18,726 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:48:19,879 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:48:19,883 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:48:19,885 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:48:19,886 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:48:19,887 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:48:19,887 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:48:19,888 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:48:19,889 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:48:19,889 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:48:19,900 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:48:19,903 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:48:19,904 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:48:19,910 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
+2026-02-01 10:51:33,538 - src.feature_engineer - INFO - Engineering features for fraud data
+2026-02-01 10:51:33,542 - src.feature_engineer - INFO - Created temporal features
+2026-02-01 10:51:33,543 - src.feature_engineer - INFO - Created purchase velocity features (time between signup and purchase)
+2026-02-01 10:51:33,544 - src.feature_engineer - INFO - Created device frequency feature (devices used multiple times are suspicious)
+2026-02-01 10:51:33,545 - src.feature_engineer - INFO - Created IP frequency feature (IPs used multiple times are suspicious)
+2026-02-01 10:51:33,545 - src.feature_engineer - INFO - Converted IP addresses to integers
+2026-02-01 10:51:33,546 - src.feature_engineer - INFO - Created purchase value features
+2026-02-01 10:51:33,547 - src.feature_engineer - INFO - Created age group features
+2026-02-01 10:51:33,548 - src.feature_engineer - INFO - Created interaction features
+2026-02-01 10:51:33,559 - src.feature_engineer - INFO - Created velocity features (device_usage_count, ip_usage_count, etc.)
+2026-02-01 10:51:33,562 - src.feature_engineer - INFO - Created user sharing features
+2026-02-01 10:51:33,562 - src.feature_engineer - INFO - Created high-risk country feature
+2026-02-01 10:51:33,566 - src.feature_engineer - INFO - One-hot encoded: ['browser', 'source', 'sex']
