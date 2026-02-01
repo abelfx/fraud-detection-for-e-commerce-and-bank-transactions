@@ -37,17 +37,43 @@ def save_scaler():
 
     # 2. Fit Scaler
     print("Fitting Scaler (calculating averages and deviations)...")
-    preprocessor = DataPreprocessor(use_smote=False)
+    
+    # CRITICAL FIX: Split data exactly like training to get correct means/stds
+    from sklearn.model_selection import train_test_split
     
     # Prepare X (features)
     if data_config.target_column in df.columns:
         X = df.drop(columns=[data_config.target_column])
+        # Force column order to standard list if needed, or trust loaded
         y = df[data_config.target_column]
     else:
+        print("Target column missing - cannot stratify split used in training.")
         X = df
         y = None # Not needed for scaling
-        
-    preprocessor.fit_transform(X, y)
+    
+    # Split to extract X_train (which was used for training the model)
+    # The preprocessor MUST be fitted on X_train only to match the model's "view" of the world
+    try:
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, 
+            test_size=data_config.test_size,
+            random_state=data_config.random_state, 
+            stratify=y
+        )
+        print(f"Split data: Fitting scaler on {len(X_train)} training samples (matching model training)...")
+        # Use X_train for fitting
+        fit_X = X_train
+        fit_y = y_train
+    except Exception as e:
+        print(f"Warning: Could not split data (maybe missing y?): {e}")
+        print("Fitting on full dataset instead.")
+        fit_X = X
+        fit_y = y
+
+    preprocessor = DataPreprocessor(use_smote=False)
+    
+    # Fit on training portion only
+    preprocessor.fit_transform(fit_X, fit_y)
     
     # 3. Save Scaler
     scaler_path = model_config.model_save_dir / "preprocessor_scaler.joblib"
