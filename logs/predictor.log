@@ -273,3 +273,8 @@
 2026-01-31 22:31:10,824 - src.predictor - INFO - Model loaded: random_forest
 2026-01-31 22:31:10,824 - src.predictor - INFO - Making predictions on 1 samples
 2026-01-31 22:31:10,851 - src.predictor - INFO - Predictions complete: 1 fraud cases detected (100.00%)
+2026-02-01 10:07:18,166 - src.predictor - INFO - Loading model using dashboard convention: /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-02-01 10:07:18,169 - src.predictor - INFO - Loading model from /home/abel/Desktop/Copied_with_better_precison/fraud-detection-for-e-commerce-and-bank-transactions/models/random_forest_fraud_model.joblib
+2026-02-01 10:07:18,203 - src.predictor - INFO - Model loaded: random_forest
+2026-02-01 10:07:18,203 - src.predictor - INFO - Making predictions on 1 samples
+2026-02-01 10:07:18,219 - src.predictor - INFO - Predictions complete: 0 fraud cases detected (0.00%)
